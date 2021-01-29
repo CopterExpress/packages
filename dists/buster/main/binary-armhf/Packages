@@ -1,0 +1,36 @@
+Package: ros-melodic-ws281x-dbgsym
+Source: ros-melodic-ws281x
+Version: 0.0.9-0buster
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: sfalexrog <sfalexrog@gmail.com>
+Installed-Size: 414
+Depends: ros-melodic-ws281x (= 0.0.9-0buster)
+Section: debug
+Priority: optional
+Description: debug symbols for ros-melodic-ws281x
+Build-Ids: 261364ae169acfaf7ecd6376641f0a28d1ae7e6a
+Size: 372368
+MD5sum: 135c305515fb119e070db6426dfa3a75
+SHA512: d9ae230537471c3d0ea293cfa5aaf720a7c741d8d2632ad59bcef71e17f2db5a0924baf49ed6067a4b9c1ae1396e608b85573968e5d3aca778d2808827d1c10f
+SHA256: 3e81f0b6b9007e432541aba53bf167d2f0e332c3ab690fcbcfd631eacb5c8bab
+SHA1: fb78b6fa5281541eef9c943377a2d0f6dfc5eb61
+Filename: pool/main/r/ros-melodic-ws281x-dbgsym/ros-melodic-ws281x-dbgsym_0.0.9-0buster_armhf.deb
+
+Package: ros-melodic-ws281x
+Version: 0.0.9-0buster
+Architecture: armhf
+Maintainer: sfalexrog <sfalexrog@gmail.com>
+Installed-Size: 206
+Depends: libboost-atomic1.67.0, libboost-chrono1.67.0, libboost-date-time1.67.0, libboost-filesystem1.67.0, libboost-regex1.67.0 (>= 1.67.0-10), libboost-system1.67.0, libboost-thread1.67.0, libc6 (>= 2.17), libconsole-bridge0.4, libgcc1 (>= 1:3.5), liblog4cxx10v5, libstdc++6 (>= 5.2), ros-melodic-led-msgs, ros-melodic-message-generation, ros-melodic-roscpp
+Section: misc
+Priority: optional
+Homepage: https://github.com/CopterExpress/ros_led
+Description: ROS node for rpi_ws281x LED strip driver
+Size: 39936
+SHA1: 74753fd1627c529af7e15a85b64d720dc63ab7fe
+MD5sum: d17a188f04b475d102f965119bbcd700
+SHA512: e71c4c039a052ad973dba0b0f5adb7b2be2c85d6819070b337f61f6b06ee192ce6d4e25c564c2cd3217e91791e261a84b2d59f1af95850417de87a2c69587121
+SHA256: d1c5fc7cfbcc287b239c2bdb3f1f7bb92449ed1b47d1fe7036808b86e03b05be
+Filename: pool/main/r/ros-melodic-ws281x/ros-melodic-ws281x_0.0.9-0buster_armhf.deb
+
