@@ -17,6 +17,7 @@ jobs:
         run: |
           echo "$GPG_KEY" > ./key.asc
           ./repogen-linux-64bit --generate-web --generate-contents ./key.asc ./packages ./build
+          cp ./index.html ./build
         env:
           GPG_KEY: ${{ secrets.GPG_KEY }}
 
