@@ -11,10 +11,10 @@ Priority: optional
 Description: debug symbols for ros-melodic-ws281x
 Build-Ids: 261364ae169acfaf7ecd6376641f0a28d1ae7e6a
 Size: 372368
-MD5sum: 135c305515fb119e070db6426dfa3a75
 SHA512: d9ae230537471c3d0ea293cfa5aaf720a7c741d8d2632ad59bcef71e17f2db5a0924baf49ed6067a4b9c1ae1396e608b85573968e5d3aca778d2808827d1c10f
 SHA256: 3e81f0b6b9007e432541aba53bf167d2f0e332c3ab690fcbcfd631eacb5c8bab
 SHA1: fb78b6fa5281541eef9c943377a2d0f6dfc5eb61
+MD5sum: 135c305515fb119e070db6426dfa3a75
 Filename: pool/main/r/ros-melodic-ws281x-dbgsym/ros-melodic-ws281x-dbgsym_0.0.9-0buster_armhf.deb
 
 Package: ros-melodic-ws281x
