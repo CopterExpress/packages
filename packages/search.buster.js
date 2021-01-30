@@ -100,6 +100,8 @@ inputEl.addEventListener("keydown", function(ev) {
 	} else if (ev.keyCode == 13) {
 		els[selected].click();
 		ev.preventDefault();
+	} else if (ev.keyCode == 27) {
+		inputEl.blur();
 	}
 });
 search();
