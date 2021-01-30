@@ -1837,7 +1837,7 @@
 			
 			<script>
 				document.addEventListener("DOMContentLoaded", function () {
-					var url = window.location.toString().match(/^(.*)\/packages.*?$/)[1];
+					var url = window.location.toString().match(/^(.*)\/packages\/.+?$/)[1];
 					document.getElementById("repo-url").innerHTML = "";
 					document.getElementById("repo-url").innerText = url;
 					document.getElementById("repo-key-url").innerHTML = "";
