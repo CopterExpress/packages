@@ -18,6 +18,8 @@ jobs:
           echo "$GPG_KEY" > ./key.asc
           ./repogen-linux-64bit --generate-web --generate-contents ./key.asc ./packages ./build
           cp ./index.html ./build
+          shopt -s globstar
+          cat metrika.html | tee -a ./build/**/*.html
         env:
           GPG_KEY: ${{ secrets.GPG_KEY }}
 
