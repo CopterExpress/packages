@@ -15,6 +15,7 @@ To use the repository add it to the sources list:
 ```bash
 wget -O - 'http://packages.coex.tech/key.asc' | apt-key add - 
 echo 'deb http://packages.coex.tech buster main' >> /etc/apt/sources.list
+sudo apt update
 ```
 
 After that, you can install ROS packages with `apt`, like so:
