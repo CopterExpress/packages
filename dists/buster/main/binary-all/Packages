@@ -54,10 +54,10 @@ Description: development data for opencv
  analysis, structural analysis, motion analysis and object tracking, object
  recognition, camera calibration and 3D reconstruction.
 Size: 1354864
-SHA1: 9e2a66daf811c2a5d3f0bdc74cc3b590cc544850
 MD5sum: 37b1c286061e9ed48f89f6ff2387435c
 SHA512: 72b70c1d5199e6955a055bf68b3123f2c131d8c9113a2883f08fdecfcf32c6571b254bcbba2a9db1ef4cdd8a616cc4ca474dc0fc02f94e2d0a5e3e4b26644468
 SHA256: a9f56dcc7e31cd873e30e52da1e5ff3e5e79490da628499de2a21aefaa906a9c
+SHA1: 9e2a66daf811c2a5d3f0bdc74cc3b590cc544850
 Filename: pool/main/o/opencv-data/opencv-data_4.2.0+dfsg-5_all.deb
 
 Package: opencv-doc
