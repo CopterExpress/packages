@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<base href="../../" />
+	<title>ros-noetic-rosgraph-msgs - Packages</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" />
+	<style>html,body{padding:0;margin:0}body{font-family:open sans,Helvetica,sans-serif;font-size:14px;background:#fafafa;line-height:1.42}.nav{display:flex;flex-direction:row;justify-content:space-between;align-items:center;background:#eaeaea;color:#000}.nav__section{flex:0 0 auto;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;padding:0 15px}.nav__section__item{display:inline-block;vertical-align:middle;padding:11px 15px}.nav__section__item:link,.nav__section__item:visited{color:inherit;text-decoration:none;cursor:pointer;outline:none}.nav__section__item:hover{background:#ddd}.nav__section__item:active{background:#ccc}.package-info{display:block}.package-info__header{display:block;background:#ebebeb;background:linear-gradient(to bottom,#fafafa 0%,#ebebeb 100%);padding:15px 30px;border-bottom:1px solid #e0e0e0}.package-info__header__dist{display:block}.package-info__header__name{display:block;font-family:Bitter,open sans,Helvetica,sans-serif;font-size:28px;margin-bottom:4px}.package-info__header__shortdesc{display:block;font-size:17px}.package-info__body{display:block;margin:0 30px}.block{display:block;overflow:hidden;border-radius:4px;border:1px solid #ddd;margin:20px 0;background:#fff;box-shadow:0 1px 1px #0000000d}.block__title{display:block;font-family:Bitter,open sans,Helvetica,sans-serif;font-size:16px;padding:10px 15px;background-color:#f5f5f5;border-bottom:1px solid #ddd}.block__body{color:#333;padding:10px 15px;overflow-x:auto;overflow-y:hidden}.block__body.block__body--nopadding{padding:0}.block__body.block__body--monospace{font-family:monospace;white-space:nowrap}.block__body__list{display:block;color:#555}.block__body__list__item{display:block;border-bottom:1px solid #ddd;padding:10px 15px}.block__body__list__item:last-child{border-bottom:none}.block__body__list__item:link,.block__body__list__item:visited{text-decoration:none;color:inherit;cursor:pointer;outline:none}.block__body__list__item:link:hover{background:#f5f5f5}.block__body__list__item--kv .block__body__list__item__key{display:block;color:#333;font-weight:700}.block__body__list__item--kv .block__body__list__item__value{display:block}.block__body__list__item__icon{margin-right:6px}.depends-dot{display:inline-block;vertical-align:middle;border:1px solid currentColor;border-radius:8px;width:8px;height:8px;color:#777;margin-right:6px}.depends-dot.depends-dot--depends,.depends-dot.depends-dot--pre-depends{color:#c70036;background:currentColor}.depends-dot.depends-dot--recommends{border-radius:0;color:#0040c7;background:currentColor}.depends-dot.depends-dot--suggests{border-radius:0;color:#1ca000;background:currentColor;transform:rotate(45deg)}.depends-dot.depends-dot--enhances{border-radius:0;color:orange}.depends-dot.depends-dot--conflicts,.depends-dot.depends-dot--breaks{border-radius:0;color:#c70036}.footer{margin-top:20px;text-align:center;padding:15px 30px;font-size:10px;color:#444}.version-table{display:table;border-collapse:collapse;width:100%}.version-table__row{display:table-row;border-bottom:1px solid #ddd}.version-table__row:last-child{border-bottom:none}.version-table__row.version-table__row--header{font-weight:700;color:#333}.version-table__col{display:table-cell;padding:8px 14px;border-right:1px solid #ddd}.version-table__col:last-child{border-right:none}.version-table__col--version{width:20%;min-width:125px;max-width:150px;border-right:4px solid #ddd}.version-table__col--arch{min-width:100px;font-size:12px}.version-table__col a:link,.version-table__col a:visited{display:inline-block;vertical-align:middle;white-space:no-wrap;text-decoration:none;outline:0;color:#36b;background:#f0f0f0;border:1px solid #eaeaea;padding:2px 4px;margin:2px 8px;margin-left:0}.version-table__col a:hover{text-decoration:underline}::selection{background:#dae0ec}::-moz-selection{background:#dae0ec}.header{display:block;font-family:Bitter,open sans,Helvetica,sans-serif;margin:15px 30px;font-size:24px}.header.header--center{text-align:center}.dist-cards{display:block;margin:15px 30px;text-align:center}.dist-card,.dist-card:link,.dist-card:visited{text-align:left;display:block;margin-bottom:15px;padding:10px 15px;border:1px solid #ddd;border-radius:4px;color:inherit;text-decoration:none;background:#fff;box-shadow:0 1px 1px #0000000d;outline:0;cursor:pointer}.dist-card:hover{border:1px solid #ccc;box-shadow:0 1px 10px #0000001a}.dist-card__name{display:block;font-family:Bitter,open sans,Helvetica,sans-serif;font-size:18px;color:#36b;font-weight:700;margin-bottom:4px}.dist-card__name:hover{text-decoration:underline}.dist-card__packages{display:block}.nav__section__item.nav__section__item--gpg{display:none}.search{margin-right:18px;margin-left:15px;width:180px;transition:width .5s cubic-bezier(0.075,0.82,0.165,1);box-sizing:border-box}.search.search--focus{width:250px}.search__query{display:block;width:100%;color:#000;background:#fff;border:1px solid #666;border-radius:3px;outline:0;padding:4px 6px;box-sizing:border-box}.search__query:focus{border-color:#111}.search .search__results{opacity:0;margin-top:-1e4px;transition:opacity .5s cubic-bezier(0.075,0.82,0.165,1),margin 0s .5s;box-sizing:border-box}.search.search--focus .search__results,.search__results:hover{opacity:1;margin-top:4px;transition:opacity .5s cubic-bezier(0.075,0.82,0.165,1)}.search__results{position:absolute;overflow:hidden;width:inherit;margin-top:4px;background:#fff;border:1px solid #ccd0dc;border-radius:3px;color:#000}.search__results:empty{display:none}.search__results__none{padding:4px 6px;font-size:13px}.search__results__result,.search__results__result:link,.search__results__result:visited{display:block;border-bottom:1px solid #ccd0dc;padding:4px 6px;font-size:13px;color:inherit;outline:0;text-decoration:none}.search__results__result:last-child{border-bottom:none}.search__results__result:hover,.search__results__result.search__results__result--focus,.search__results:hover .search__results__result.search__results__result--focus:hover{background:#f5f5f5}.search__results:hover .search__results__result.search__results__result--focus{background:0 0}.search__results__result:active{background:#ececec}.search__results__result__package{font-weight:700;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.search__results__result__version{color:#555;float:right;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.search__results__result__description{clear:both;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media only screen and (min-width:768px){.package-info__header__name{display:inline-block;vertical-align:middle;margin-bottom:0}.package-info__header__shortdesc:before{display:inline-block;content:'—';padding-right:.8em;padding-left:.8em}.package-info__header__shortdesc{display:inline-block;vertical-align:middle;margin-bottom:0}.package-info__body{display:flex;flex-direction:row;align-items:flex-start;justify-content:space-between}.package-info__body__col{display:block;flex:1}.package-info__body__col.package-info__body__col--main{flex:9}.package-info__body__col.package-info__body__col--sidebar{flex:3}.package-info__body__col.package-info__body__col--sidebar{margin-left:30px}.block__body__list__item--kv .block__body__list__item__key{display:inline-block;vertical-align:top;width:25%}.block__body__list__item--kv .block__body__list__item__value{display:inline-block;vertical-align:top}.dist-card,.dist-card:link,.dist-card:visited{display:inline-block;vertical-align:top;margin-right:15px;margin-left:15px;width:150px}.nav__section__item.nav__section__item--gpg{display:inline-block}.search{width:250px}.search.search--focus{width:300px}}@media only screen and (max-width:450px){.nav{flex-direction:column;padding-bottom:15px}}</style>
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400|Open+Sans:400,400i,700" rel="stylesheet" /> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="nav">
+		<div class="nav__section nav__section--left">
+			<a class="nav__section__item" href="index.html">Home</a>
+			
+				<a class="nav__section__item" href="index.html">Dists</a>
+				
+					<a class="nav__section__item" href="bookworm/">bookworm</a>
+				
+			
+		</div>
+		<div class="nav__section nav__section--right">
+			
+				<div class="search">
+					<input type="text" class="search__query" autocomplete="off" placeholder="Search packages">
+					<div class="search__results"></div>
+				</div>
+			
+			<a class="nav__section__item nav__section__item--gpg" href="../key.asc">GPG Key</a>
+		</div>
+	</div>
+
+	<div class="content">
+		
+	<div class="package-info">
+		<div class="package-info__header">
+			<div class="package-info__header__dist">dist: bookworm</div>	
+			<div class="package-info__header__name">ros-noetic-rosgraph-msgs</div>	
+			<div class="package-info__header__shortdesc">Messages relating to the ROS Computation Graph.</div>
+		</div>
+		<div class="package-info__body">
+			<div class="package-info__body__col package-info__body__col--main">
+				<div class="block">
+					<div class="block__title">Available Versions</div>
+					<div class="block__body block__body--nopadding">
+						<div class="version-table">
+							<div class="version-table__row version-table__row--header">
+								
+									
+										<div class="version-table__col version-table__col--version">Version</div>
+									
+								
+									
+										<div class="version-table__col version-table__col--arch">all</div>
+									
+								
+									
+										<div class="version-table__col version-table__col--arch">armhf</div>
+									
+								
+							</div>
+							
+								<div class="version-table__row">
+									
+										
+											<div class="version-table__col version-table__col--version">1.11.3-0bookworm</div>
+										
+									
+										
+											<div class="version-table__col version-table__col--arch">
+												
+											</div>
+										
+									
+										
+											<div class="version-table__col version-table__col--arch">
+												
+													<a href="../pool/main/r/ros-noetic-rosgraph-msgs/ros-noetic-rosgraph-msgs_1.11.3-0bookworm_armhf.deb" title="Download">main</a>
+												
+											</div>
+										
+									
+								</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__title">Metadata</div>
+					<div class="block__body block__body--nopadding">
+						<div class="block__body__list">
+							
+							
+								<div class="block__body__list__item block__body__list__item--kv">
+									<div class="block__body__list__item__key"><i class="fa fa-user block__body__list__item__icon"></i> Maintainer</div>
+									<div class="block__body__list__item__value">
+										<a href="mailto:dthomas@osrfoundation.org">Dirk Thomas</a>
+									</div>
+								</div>
+							
+							
+								<div class="block__body__list__item block__body__list__item--kv">
+									<div class="block__body__list__item__key"><i class="fa fa-sliders block__body__list__item__icon"></i> Section</div>
+									<div class="block__body__list__item__value">misc</div>
+								</div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__title">Description</div>
+					<div class="block__body">
+						Messages relating to the ROS Computation Graph.<br />These are generally considered to be low-level messages that end users do not interact with.<br />
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__title">Dependencies</div>
+					<div class="block__body block__body--nopadding">
+						<div class="block__body__list">
+							
+								
+									<div class="block__body__list__item"><span title="depends" class="depends-dot depends-dot--depends"></span> libstd-msgs-dev</div>
+								
+							
+								
+									<div class="block__body__list__item"><span title="depends" class="depends-dot depends-dot--depends"></span> python3-std-msgs</div>
+								
+							
+								
+									<div class="block__body__list__item"><span title="depends" class="depends-dot depends-dot--depends"></span> ros-message-runtime</div>
+								
+							
+								
+									<div class="block__body__list__item"><span title="depends" class="depends-dot depends-dot--depends"></span> ros-std-msgs</div>
+								
+							
+							
+							
+							
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="package-info__body__col package-info__body__col--sidebar">
+				<div class="block">
+					<div class="block__title">Other Dists</div>
+					<div class="block__body block__body--nopadding">
+						<div class="block__body__list">
+							
+								<a href="bookworm/ros-noetic-rosgraph-msgs" class="block__body__list__item"><i class="fa fa-link block__body__list__item__icon"></i>
+									
+										<b>bookworm</b>
+									
+								</a>
+							
+								<a href="buster/ros-noetic-rosgraph-msgs" class="block__body__list__item"><i class="fa fa-link block__body__list__item__icon"></i>
+									
+										buster
+									
+								</a>
+							
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="block__title">Links</div>
+					<div class="block__body block__body--nopadding">
+						<div class="block__body__list">
+							
+								<a href="http://ros.org/wiki/rosgraph_msgs" class="block__body__list__item"><i class="fa fa-home block__body__list__item__icon"></i> Homepage</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<div class="footer">
+		Powered by <a href="https://github.com/pgaskin/repogen">repogen</a>
+	</div>
+
+	
+		<script src="search.bookworm.js"></script>
+	
+</body>
+</html>
+<!-- Yandex.Metrika counter --> <script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript" ></script> <script type="text/javascript" > try { var yaCounter73820410 = new Ya.Metrika({ id:73820410, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } </script> <noscript><div><img src="https://mc.yandex.ru/watch/73820410" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->

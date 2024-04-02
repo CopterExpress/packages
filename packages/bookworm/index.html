@@ -1,0 +1,846 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<base href="../" />
+	<title>bookworm - Packages</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" />
+	<style>html,body{padding:0;margin:0}body{font-family:open sans,Helvetica,sans-serif;font-size:14px;background:#fafafa;line-height:1.42}.nav{display:flex;flex-direction:row;justify-content:space-between;align-items:center;background:#eaeaea;color:#000}.nav__section{flex:0 0 auto;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;padding:0 15px}.nav__section__item{display:inline-block;vertical-align:middle;padding:11px 15px}.nav__section__item:link,.nav__section__item:visited{color:inherit;text-decoration:none;cursor:pointer;outline:none}.nav__section__item:hover{background:#ddd}.nav__section__item:active{background:#ccc}.package-info{display:block}.package-info__header{display:block;background:#ebebeb;background:linear-gradient(to bottom,#fafafa 0%,#ebebeb 100%);padding:15px 30px;border-bottom:1px solid #e0e0e0}.package-info__header__dist{display:block}.package-info__header__name{display:block;font-family:Bitter,open sans,Helvetica,sans-serif;font-size:28px;margin-bottom:4px}.package-info__header__shortdesc{display:block;font-size:17px}.package-info__body{display:block;margin:0 30px}.block{display:block;overflow:hidden;border-radius:4px;border:1px solid #ddd;margin:20px 0;background:#fff;box-shadow:0 1px 1px #0000000d}.block__title{display:block;font-family:Bitter,open sans,Helvetica,sans-serif;font-size:16px;padding:10px 15px;background-color:#f5f5f5;border-bottom:1px solid #ddd}.block__body{color:#333;padding:10px 15px;overflow-x:auto;overflow-y:hidden}.block__body.block__body--nopadding{padding:0}.block__body.block__body--monospace{font-family:monospace;white-space:nowrap}.block__body__list{display:block;color:#555}.block__body__list__item{display:block;border-bottom:1px solid #ddd;padding:10px 15px}.block__body__list__item:last-child{border-bottom:none}.block__body__list__item:link,.block__body__list__item:visited{text-decoration:none;color:inherit;cursor:pointer;outline:none}.block__body__list__item:link:hover{background:#f5f5f5}.block__body__list__item--kv .block__body__list__item__key{display:block;color:#333;font-weight:700}.block__body__list__item--kv .block__body__list__item__value{display:block}.block__body__list__item__icon{margin-right:6px}.depends-dot{display:inline-block;vertical-align:middle;border:1px solid currentColor;border-radius:8px;width:8px;height:8px;color:#777;margin-right:6px}.depends-dot.depends-dot--depends,.depends-dot.depends-dot--pre-depends{color:#c70036;background:currentColor}.depends-dot.depends-dot--recommends{border-radius:0;color:#0040c7;background:currentColor}.depends-dot.depends-dot--suggests{border-radius:0;color:#1ca000;background:currentColor;transform:rotate(45deg)}.depends-dot.depends-dot--enhances{border-radius:0;color:orange}.depends-dot.depends-dot--conflicts,.depends-dot.depends-dot--breaks{border-radius:0;color:#c70036}.footer{margin-top:20px;text-align:center;padding:15px 30px;font-size:10px;color:#444}.version-table{display:table;border-collapse:collapse;width:100%}.version-table__row{display:table-row;border-bottom:1px solid #ddd}.version-table__row:last-child{border-bottom:none}.version-table__row.version-table__row--header{font-weight:700;color:#333}.version-table__col{display:table-cell;padding:8px 14px;border-right:1px solid #ddd}.version-table__col:last-child{border-right:none}.version-table__col--version{width:20%;min-width:125px;max-width:150px;border-right:4px solid #ddd}.version-table__col--arch{min-width:100px;font-size:12px}.version-table__col a:link,.version-table__col a:visited{display:inline-block;vertical-align:middle;white-space:no-wrap;text-decoration:none;outline:0;color:#36b;background:#f0f0f0;border:1px solid #eaeaea;padding:2px 4px;margin:2px 8px;margin-left:0}.version-table__col a:hover{text-decoration:underline}::selection{background:#dae0ec}::-moz-selection{background:#dae0ec}.header{display:block;font-family:Bitter,open sans,Helvetica,sans-serif;margin:15px 30px;font-size:24px}.header.header--center{text-align:center}.dist-cards{display:block;margin:15px 30px;text-align:center}.dist-card,.dist-card:link,.dist-card:visited{text-align:left;display:block;margin-bottom:15px;padding:10px 15px;border:1px solid #ddd;border-radius:4px;color:inherit;text-decoration:none;background:#fff;box-shadow:0 1px 1px #0000000d;outline:0;cursor:pointer}.dist-card:hover{border:1px solid #ccc;box-shadow:0 1px 10px #0000001a}.dist-card__name{display:block;font-family:Bitter,open sans,Helvetica,sans-serif;font-size:18px;color:#36b;font-weight:700;margin-bottom:4px}.dist-card__name:hover{text-decoration:underline}.dist-card__packages{display:block}.nav__section__item.nav__section__item--gpg{display:none}.search{margin-right:18px;margin-left:15px;width:180px;transition:width .5s cubic-bezier(0.075,0.82,0.165,1);box-sizing:border-box}.search.search--focus{width:250px}.search__query{display:block;width:100%;color:#000;background:#fff;border:1px solid #666;border-radius:3px;outline:0;padding:4px 6px;box-sizing:border-box}.search__query:focus{border-color:#111}.search .search__results{opacity:0;margin-top:-1e4px;transition:opacity .5s cubic-bezier(0.075,0.82,0.165,1),margin 0s .5s;box-sizing:border-box}.search.search--focus .search__results,.search__results:hover{opacity:1;margin-top:4px;transition:opacity .5s cubic-bezier(0.075,0.82,0.165,1)}.search__results{position:absolute;overflow:hidden;width:inherit;margin-top:4px;background:#fff;border:1px solid #ccd0dc;border-radius:3px;color:#000}.search__results:empty{display:none}.search__results__none{padding:4px 6px;font-size:13px}.search__results__result,.search__results__result:link,.search__results__result:visited{display:block;border-bottom:1px solid #ccd0dc;padding:4px 6px;font-size:13px;color:inherit;outline:0;text-decoration:none}.search__results__result:last-child{border-bottom:none}.search__results__result:hover,.search__results__result.search__results__result--focus,.search__results:hover .search__results__result.search__results__result--focus:hover{background:#f5f5f5}.search__results:hover .search__results__result.search__results__result--focus{background:0 0}.search__results__result:active{background:#ececec}.search__results__result__package{font-weight:700;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.search__results__result__version{color:#555;float:right;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.search__results__result__description{clear:both;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media only screen and (min-width:768px){.package-info__header__name{display:inline-block;vertical-align:middle;margin-bottom:0}.package-info__header__shortdesc:before{display:inline-block;content:'—';padding-right:.8em;padding-left:.8em}.package-info__header__shortdesc{display:inline-block;vertical-align:middle;margin-bottom:0}.package-info__body{display:flex;flex-direction:row;align-items:flex-start;justify-content:space-between}.package-info__body__col{display:block;flex:1}.package-info__body__col.package-info__body__col--main{flex:9}.package-info__body__col.package-info__body__col--sidebar{flex:3}.package-info__body__col.package-info__body__col--sidebar{margin-left:30px}.block__body__list__item--kv .block__body__list__item__key{display:inline-block;vertical-align:top;width:25%}.block__body__list__item--kv .block__body__list__item__value{display:inline-block;vertical-align:top}.dist-card,.dist-card:link,.dist-card:visited{display:inline-block;vertical-align:top;margin-right:15px;margin-left:15px;width:150px}.nav__section__item.nav__section__item--gpg{display:inline-block}.search{width:250px}.search.search--focus{width:300px}}@media only screen and (max-width:450px){.nav{flex-direction:column;padding-bottom:15px}}</style>
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400|Open+Sans:400,400i,700" rel="stylesheet" /> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="nav">
+		<div class="nav__section nav__section--left">
+			<a class="nav__section__item" href="index.html">Home</a>
+			
+				<a class="nav__section__item" href="index.html">Dists</a>
+				
+			
+		</div>
+		<div class="nav__section nav__section--right">
+			
+				<div class="search">
+					<input type="text" class="search__query" autocomplete="off" placeholder="Search packages">
+					<div class="search__results"></div>
+				</div>
+			
+			<a class="nav__section__item nav__section__item--gpg" href="../key.asc">GPG Key</a>
+		</div>
+	</div>
+
+	<div class="content">
+		
+	<div class="header header--center">Packages in bookworm</div>
+	<div class="block" style="margin:15px 30px;">
+		<div class="block__title">All Packages</div>
+		<div class="block__body block__body--nopadding">
+			<div class="block__body__list">
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-actionlib/">
+						<div class="block__body__list__item__key">ros-noetic-actionlib</div>
+						<div class="block__body__list__item__value">The actionlib stack provides a standardized interface for interfacing with preemptable tasks.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-actionlib-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-actionlib-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-actionlib</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-actionlib-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-actionlib-msgs</div>
+						<div class="block__body__list__item__value">actionlib_msgs defines the common messages to interact with an action server and an action client.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-angles/">
+						<div class="block__body__list__item__key">ros-noetic-angles</div>
+						<div class="block__body__list__item__value">This package provides a set of simple math utilities to work with angles.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-async-web-server-cpp/">
+						<div class="block__body__list__item__key">ros-noetic-async-web-server-cpp</div>
+						<div class="block__body__list__item__value">Asynchronous Web/WebSocket Server in C&#43;&#43;</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-async-web-server-cpp-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-async-web-server-cpp-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-async-web-server-cpp</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-bond/">
+						<div class="block__body__list__item__key">ros-noetic-bond</div>
+						<div class="block__body__list__item__value">A bond allows two processes, A and B, to know when the other has terminated, either cleanly or by crashing.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-bondcpp/">
+						<div class="block__body__list__item__key">ros-noetic-bondcpp</div>
+						<div class="block__body__list__item__value">C&#43;&#43; implementation of bond, a mechanism for checking when another process has terminated.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-bondcpp-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-bondcpp-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-bondcpp</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-bondpy/">
+						<div class="block__body__list__item__key">ros-noetic-bondpy</div>
+						<div class="block__body__list__item__value">Python implementation of bond, a mechanism for checking when another process has terminated.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-camera-calibration-parsers/">
+						<div class="block__body__list__item__key">ros-noetic-camera-calibration-parsers</div>
+						<div class="block__body__list__item__value">camera_calibration_parsers contains routines for reading and writing camera calibration parameters.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-camera-calibration-parsers-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-camera-calibration-parsers-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-camera-calibration-parsers</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-camera-info-manager/">
+						<div class="block__body__list__item__key">ros-noetic-camera-info-manager</div>
+						<div class="block__body__list__item__value">This package provides a C&#43;&#43; interface for camera calibration information.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-camera-info-manager-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-camera-info-manager-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-camera-info-manager</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-catkin/">
+						<div class="block__body__list__item__key">ros-noetic-catkin</div>
+						<div class="block__body__list__item__value">Low-level build system macros and infrastructure for ROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-class-loader/">
+						<div class="block__body__list__item__key">ros-noetic-class-loader</div>
+						<div class="block__body__list__item__value">The class_loader package is a ROS-independent package for loading plugins during runtime and the foundation of the higher level ROS &amp;quot;pluginlib&amp;quot; library.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-class-loader-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-class-loader-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-class-loader</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-cmake-modules/">
+						<div class="block__body__list__item__key">ros-noetic-cmake-modules</div>
+						<div class="block__body__list__item__value">A common repository for CMake Modules which are not distributed with CMake but are commonly used by ROS packages.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-cpp-common/">
+						<div class="block__body__list__item__key">ros-noetic-cpp-common</div>
+						<div class="block__body__list__item__value">cpp_common contains C&#43;&#43; code for doing things that are not necessarily ROS related, but are useful for multiple packages.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-cpp-common-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-cpp-common-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-cpp-common</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-cv-bridge/">
+						<div class="block__body__list__item__key">ros-noetic-cv-bridge</div>
+						<div class="block__body__list__item__value">This contains CvBridge, which converts between ROS Image messages and OpenCV images.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-cv-bridge-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-cv-bridge-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-cv-bridge</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-cv-camera/">
+						<div class="block__body__list__item__key">ros-noetic-cv-camera</div>
+						<div class="block__body__list__item__value">cv_camera uses OpenCV capture object to capture camera image.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-cv-camera-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-cv-camera-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-cv-camera</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-diagnostic-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-diagnostic-msgs</div>
+						<div class="block__body__list__item__value">This package holds the diagnostic messages which provide the standardized interface for the diagnostic and runtime monitoring systems in ROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-diagnostic-updater/">
+						<div class="block__body__list__item__key">ros-noetic-diagnostic-updater</div>
+						<div class="block__body__list__item__value">diagnostic_updater contains tools for easily updating diagnostics.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-diagnostic-updater-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-diagnostic-updater-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-diagnostic-updater</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-dynamic-reconfigure/">
+						<div class="block__body__list__item__key">ros-noetic-dynamic-reconfigure</div>
+						<div class="block__body__list__item__value">The dynamic_reconfigure package provides a means to update parameters at runtime without having to restart the node.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-dynamic-reconfigure-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-dynamic-reconfigure-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-dynamic-reconfigure</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-eigen-conversions/">
+						<div class="block__body__list__item__key">ros-noetic-eigen-conversions</div>
+						<div class="block__body__list__item__value">Conversion functions between: - Eigen and KDL - Eigen and geometry_msgs.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-eigen-conversions-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-eigen-conversions-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-eigen-conversions</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-gencpp/">
+						<div class="block__body__list__item__key">ros-noetic-gencpp</div>
+						<div class="block__body__list__item__value">C&#43;&#43; ROS message and service generators.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-geneus/">
+						<div class="block__body__list__item__key">ros-noetic-geneus</div>
+						<div class="block__body__list__item__value">EusLisp ROS message and service generators.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-genlisp/">
+						<div class="block__body__list__item__key">ros-noetic-genlisp</div>
+						<div class="block__body__list__item__value">Common-Lisp ROS message and service generators.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-genmsg/">
+						<div class="block__body__list__item__key">ros-noetic-genmsg</div>
+						<div class="block__body__list__item__value">Standalone Python library for generating ROS message and service data structures for various languages.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-gennodejs/">
+						<div class="block__body__list__item__key">ros-noetic-gennodejs</div>
+						<div class="block__body__list__item__value">Javascript ROS message and service generators.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-genpy/">
+						<div class="block__body__list__item__key">ros-noetic-genpy</div>
+						<div class="block__body__list__item__value">Python ROS message and service generators.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-geographic-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-geographic-msgs</div>
+						<div class="block__body__list__item__value">ROS messages for Geographic Information Systems.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-geometry-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-geometry-msgs</div>
+						<div class="block__body__list__item__value">geometry_msgs provides messages for common geometric primitives such as points, vectors, and poses.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-image-geometry/">
+						<div class="block__body__list__item__key">ros-noetic-image-geometry</div>
+						<div class="block__body__list__item__value">`image_geometry` contains C&#43;&#43; and Python libraries for interpreting images geometrically.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-image-geometry-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-image-geometry-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-image-geometry</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-image-proc/">
+						<div class="block__body__list__item__key">ros-noetic-image-proc</div>
+						<div class="block__body__list__item__value">Single image rectification and color processing.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-image-proc-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-image-proc-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-image-proc</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-image-publisher/">
+						<div class="block__body__list__item__key">ros-noetic-image-publisher</div>
+						<div class="block__body__list__item__value">Contains a node publish an image stream from single image file or avi motion file.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-image-publisher-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-image-publisher-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-image-publisher</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-image-transport/">
+						<div class="block__body__list__item__key">ros-noetic-image-transport</div>
+						<div class="block__body__list__item__value">image_transport should always be used to subscribe to and publish images.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-image-transport-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-image-transport-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-image-transport</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-libmavconn/">
+						<div class="block__body__list__item__key">ros-noetic-libmavconn</div>
+						<div class="block__body__list__item__value">MAVLink communication library.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-libmavconn-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-libmavconn-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-libmavconn</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-mavlink/">
+						<div class="block__body__list__item__key">ros-noetic-mavlink</div>
+						<div class="block__body__list__item__value">MAVLink message marshaling library.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-mavros/">
+						<div class="block__body__list__item__key">ros-noetic-mavros</div>
+						<div class="block__body__list__item__value">MAVROS -- MAVLink extendable communication node for ROS with proxy for Ground Control Station.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-mavros-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-mavros-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-mavros</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-mavros-extras/">
+						<div class="block__body__list__item__key">ros-noetic-mavros-extras</div>
+						<div class="block__body__list__item__value">Extra nodes and plugins for MAVROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-mavros-extras-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-mavros-extras-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-mavros-extras</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-mavros-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-mavros-msgs</div>
+						<div class="block__body__list__item__value">mavros_msgs defines messages for MAVROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-message-filters/">
+						<div class="block__body__list__item__key">ros-noetic-message-filters</div>
+						<div class="block__body__list__item__value">A set of message filters which take in messages and may output those messages at a later time, based on the conditions that filter needs met.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-message-filters-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-message-filters-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-message-filters</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-message-generation/">
+						<div class="block__body__list__item__key">ros-noetic-message-generation</div>
+						<div class="block__body__list__item__value">Package modeling the build-time dependencies for generating language bindings of messages.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-message-runtime/">
+						<div class="block__body__list__item__key">ros-noetic-message-runtime</div>
+						<div class="block__body__list__item__value">Package modeling the run-time dependencies for language bindings of messages.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-mk/">
+						<div class="block__body__list__item__key">ros-noetic-mk</div>
+						<div class="block__body__list__item__value">A collection of .mk include files for building ROS architectural elements.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-nav-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-nav-msgs</div>
+						<div class="block__body__list__item__value">nav_msgs defines the common messages used to interact with the navigation stack.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-nodelet/">
+						<div class="block__body__list__item__key">ros-noetic-nodelet</div>
+						<div class="block__body__list__item__value">The nodelet package is designed to provide a way to run multiple algorithms in the same process with zero copy transport between algorithms.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-nodelet-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-nodelet-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-nodelet</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-nodelet-topic-tools/">
+						<div class="block__body__list__item__key">ros-noetic-nodelet-topic-tools</div>
+						<div class="block__body__list__item__value">This package contains common nodelet tools such as a mux, demux and throttle.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-pluginlib/">
+						<div class="block__body__list__item__key">ros-noetic-pluginlib</div>
+						<div class="block__body__list__item__value">The pluginlib package provides tools for writing and dynamically loading plugins using the ROS build infrastructure.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-ros-environment/">
+						<div class="block__body__list__item__key">ros-noetic-ros-environment</div>
+						<div class="block__body__list__item__value">The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`, `ROS_PACKAGE_PATH`, and `ROS_ETC_DIR`.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-ros-pytest/">
+						<div class="block__body__list__item__key">ros-noetic-ros-pytest</div>
+						<div class="block__body__list__item__value">The ros_pytest package</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosapi/">
+						<div class="block__body__list__item__key">ros-noetic-rosapi</div>
+						<div class="block__body__list__item__value">Provides service calls for getting ros meta-information, like list of topics, services, params, etc.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosauth/">
+						<div class="block__body__list__item__key">ros-noetic-rosauth</div>
+						<div class="block__body__list__item__value">Server Side tools for Authorization and Authentication of ROS Clients</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosauth-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-rosauth-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-rosauth</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbag/">
+						<div class="block__body__list__item__key">ros-noetic-rosbag</div>
+						<div class="block__body__list__item__value">This is a set of tools for recording from and playing back to ROS topics.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbag-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-rosbag-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-rosbag</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbag-migration-rule/">
+						<div class="block__body__list__item__key">ros-noetic-rosbag-migration-rule</div>
+						<div class="block__body__list__item__value">This empty package allows to export rosbag migration rule files without depending on rosbag.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbag-storage/">
+						<div class="block__body__list__item__key">ros-noetic-rosbag-storage</div>
+						<div class="block__body__list__item__value">This is a set of tools for recording from and playing back ROS message without relying on the ROS client library.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbag-storage-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-rosbag-storage-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-rosbag-storage</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbash/">
+						<div class="block__body__list__item__key">ros-noetic-rosbash</div>
+						<div class="block__body__list__item__value">Assorted shell commands for using ros with bash.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosboost-cfg/">
+						<div class="block__body__list__item__key">ros-noetic-rosboost-cfg</div>
+						<div class="block__body__list__item__value">Contains scripts used by the rosboost-cfg tool for determining cflags/lflags/etc.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbridge-library/">
+						<div class="block__body__list__item__key">ros-noetic-rosbridge-library</div>
+						<div class="block__body__list__item__value">The core rosbridge package, responsible for interpreting JSON and performing the appropriate ROS action, like subscribe, publish, call service, and interact with params.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbridge-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-rosbridge-msgs</div>
+						<div class="block__body__list__item__value">Package containing message files</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbridge-server/">
+						<div class="block__body__list__item__key">ros-noetic-rosbridge-server</div>
+						<div class="block__body__list__item__value">A WebSocket interface to rosbridge.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosbuild/">
+						<div class="block__body__list__item__key">ros-noetic-rosbuild</div>
+						<div class="block__body__list__item__value">rosbuild contains scripts for managing the CMake-based build system for ROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosclean/">
+						<div class="block__body__list__item__key">ros-noetic-rosclean</div>
+						<div class="block__body__list__item__value">rosclean: cleanup filesystem resources (e.g.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosconsole/">
+						<div class="block__body__list__item__key">ros-noetic-rosconsole</div>
+						<div class="block__body__list__item__value">ROS console output library.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosconsole-bridge/">
+						<div class="block__body__list__item__key">ros-noetic-rosconsole-bridge</div>
+						<div class="block__body__list__item__value">rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosconsole-bridge-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-rosconsole-bridge-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-rosconsole-bridge</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosconsole-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-rosconsole-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-rosconsole</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roscpp/">
+						<div class="block__body__list__item__key">ros-noetic-roscpp</div>
+						<div class="block__body__list__item__value">roscpp is a C&#43;&#43; implementation of ROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roscpp-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-roscpp-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-roscpp</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roscpp-serialization/">
+						<div class="block__body__list__item__key">ros-noetic-roscpp-serialization</div>
+						<div class="block__body__list__item__value">roscpp_serialization contains the code for serialization as described in MessagesSerializationAndAdaptingTypes.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roscpp-serialization-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-roscpp-serialization-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-roscpp-serialization</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roscpp-traits/">
+						<div class="block__body__list__item__key">ros-noetic-roscpp-traits</div>
+						<div class="block__body__list__item__value">roscpp_traits contains the message traits code as described in MessagesTraits.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roscpp-tutorials/">
+						<div class="block__body__list__item__key">ros-noetic-roscpp-tutorials</div>
+						<div class="block__body__list__item__value">This package attempts to show the features of ROS step-by-step, including using messages, servers, parameters, etc.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roscpp-tutorials-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-roscpp-tutorials-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-roscpp-tutorials</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roscreate/">
+						<div class="block__body__list__item__key">ros-noetic-roscreate</div>
+						<div class="block__body__list__item__value">roscreate contains a tool that assists in the creation of ROS filesystem resources.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosgraph/">
+						<div class="block__body__list__item__key">ros-noetic-rosgraph</div>
+						<div class="block__body__list__item__value">rosgraph contains the rosgraph command-line tool, which prints information about the ROS Computation Graph.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosgraph-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-rosgraph-msgs</div>
+						<div class="block__body__list__item__value">Messages relating to the ROS Computation Graph.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roslang/">
+						<div class="block__body__list__item__key">ros-noetic-roslang</div>
+						<div class="block__body__list__item__value">roslang is a common package that all ROS client libraries depend on.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roslaunch/">
+						<div class="block__body__list__item__key">ros-noetic-roslaunch</div>
+						<div class="block__body__list__item__value">roslaunch is a tool for easily launching multiple ROS nodes locally and remotely via SSH, as well as setting parameters on the Parameter Server.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roslib/">
+						<div class="block__body__list__item__key">ros-noetic-roslib</div>
+						<div class="block__body__list__item__value">Base dependencies and support libraries for ROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roslib-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-roslib-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-roslib</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roslint/">
+						<div class="block__body__list__item__key">ros-noetic-roslint</div>
+						<div class="block__body__list__item__value">CMake lint commands for ROS packages.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roslisp/">
+						<div class="block__body__list__item__key">ros-noetic-roslisp</div>
+						<div class="block__body__list__item__value">Lisp client library for ROS, the Robot Operating System.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roslz4/">
+						<div class="block__body__list__item__key">ros-noetic-roslz4</div>
+						<div class="block__body__list__item__value">A Python and C&#43;&#43; implementation of the LZ4 streaming format.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roslz4-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-roslz4-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-roslz4</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosmake/">
+						<div class="block__body__list__item__key">ros-noetic-rosmake</div>
+						<div class="block__body__list__item__value">rosmake is a ros dependency aware build tool which can be used to build all dependencies in the correct order.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosmaster/">
+						<div class="block__body__list__item__key">ros-noetic-rosmaster</div>
+						<div class="block__body__list__item__value">ROS Master implementation.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosmsg/">
+						<div class="block__body__list__item__key">ros-noetic-rosmsg</div>
+						<div class="block__body__list__item__value">rosmsg contains two command-line tools: rosmsg and rossrv.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosnode/">
+						<div class="block__body__list__item__key">ros-noetic-rosnode</div>
+						<div class="block__body__list__item__value">rosnode is a command-line tool for displaying debug information about ROS Nodes, including publications, subscriptions and connections.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosout/">
+						<div class="block__body__list__item__key">ros-noetic-rosout</div>
+						<div class="block__body__list__item__value">System-wide logging mechanism for messages sent to the /rosout topic.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosout-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-rosout-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-rosout</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rospack/">
+						<div class="block__body__list__item__key">ros-noetic-rospack</div>
+						<div class="block__body__list__item__value">ROS Package Tool</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rospack-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-rospack-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-rospack</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosparam/">
+						<div class="block__body__list__item__key">ros-noetic-rosparam</div>
+						<div class="block__body__list__item__value">rosparam contains the rosparam command-line tool for getting and setting ROS Parameters on the Parameter Server using YAML-encoded files.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rospy/">
+						<div class="block__body__list__item__key">ros-noetic-rospy</div>
+						<div class="block__body__list__item__value">rospy is a pure Python client library for ROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rospy-tutorials/">
+						<div class="block__body__list__item__key">ros-noetic-rospy-tutorials</div>
+						<div class="block__body__list__item__value">This package attempts to show the features of ROS python API step-by-step, including using messages, servers, parameters, etc.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosservice/">
+						<div class="block__body__list__item__key">ros-noetic-rosservice</div>
+						<div class="block__body__list__item__value">rosservice contains the rosservice command-line tool for listing and querying ROS Services.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rostest/">
+						<div class="block__body__list__item__key">ros-noetic-rostest</div>
+						<div class="block__body__list__item__value">Integration test suite based on roslaunch that is compatible with xUnit frameworks.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rostime/">
+						<div class="block__body__list__item__key">ros-noetic-rostime</div>
+						<div class="block__body__list__item__value">Time and Duration implementations for C&#43;&#43; libraries, including roscpp.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rostime-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-rostime-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-rostime</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rostopic/">
+						<div class="block__body__list__item__key">ros-noetic-rostopic</div>
+						<div class="block__body__list__item__value">rostopic contains the rostopic command-line tool for displaying debug information about ROS Topics, including publishers, subscribers, publishing rate, and ROS Messages.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-rosunit/">
+						<div class="block__body__list__item__key">ros-noetic-rosunit</div>
+						<div class="block__body__list__item__value">Unit-testing package for ROS.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-roswtf/">
+						<div class="block__body__list__item__key">ros-noetic-roswtf</div>
+						<div class="block__body__list__item__value">roswtf is a tool for diagnosing issues with a running ROS system.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-sensor-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-sensor-msgs</div>
+						<div class="block__body__list__item__value">This package defines messages for commonly used sensors, including cameras and scanning laser rangefinders.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-shape-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-shape-msgs</div>
+						<div class="block__body__list__item__value">This package contains messages for defining shapes, such as simple solid object primitives (cube, sphere, etc), planes, and meshes.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-smclib/">
+						<div class="block__body__list__item__key">ros-noetic-smclib</div>
+						<div class="block__body__list__item__value">The State Machine Compiler (SMC) from http://smc.sourceforge.net/ converts a language-independent description of a state machine into the source code to support that state machine.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-std-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-std-msgs</div>
+						<div class="block__body__list__item__value">Standard ROS Messages including common message types representing primitive data types and other basic message constructs, such as multiarrays.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-std-srvs/">
+						<div class="block__body__list__item__key">ros-noetic-std-srvs</div>
+						<div class="block__body__list__item__value">Common service definitions.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-stereo-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-stereo-msgs</div>
+						<div class="block__body__list__item__value">stereo_msgs contains messages specific to stereo processing, such as disparity images.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf/">
+						<div class="block__body__list__item__key">ros-noetic-tf</div>
+						<div class="block__body__list__item__value">tf is a package that lets the user keep track of multiple coordinate frames over time.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-tf-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-tf</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2/">
+						<div class="block__body__list__item__key">ros-noetic-tf2</div>
+						<div class="block__body__list__item__value">tf2 is the second generation of the transform library, which lets the user keep track of multiple coordinate frames over time.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-tf2</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-eigen/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-eigen</div>
+						<div class="block__body__list__item__value">tf2_eigen</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-geometry-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-geometry-msgs</div>
+						<div class="block__body__list__item__value">tf2_geometry_msgs</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-msgs</div>
+						<div class="block__body__list__item__value">tf2_msgs</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-py/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-py</div>
+						<div class="block__body__list__item__value">The tf2_py package</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-py-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-py-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-tf2-py</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-ros/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-ros</div>
+						<div class="block__body__list__item__value">This package contains the ROS bindings for the tf2 library, for both Python and C&#43;&#43;.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-ros-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-ros-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-tf2-ros</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-web-republisher/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-web-republisher</div>
+						<div class="block__body__list__item__value">Republishing of Selected TFs</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-tf2-web-republisher-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-tf2-web-republisher-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-tf2-web-republisher</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-topic-tools/">
+						<div class="block__body__list__item__key">ros-noetic-topic-tools</div>
+						<div class="block__body__list__item__value">Tools for directing, throttling, selecting, and otherwise messing with ROS topics at a meta level.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-topic-tools-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-topic-tools-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-topic-tools</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-trajectory-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-trajectory-msgs</div>
+						<div class="block__body__list__item__value">This package defines messages for defining robot trajectories.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-urdf/">
+						<div class="block__body__list__item__key">ros-noetic-urdf</div>
+						<div class="block__body__list__item__value">This package contains a C&#43;&#43; parser for the Unified Robot Description Format (URDF), which is an XML format for representing a robot model.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-urdf-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-urdf-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-urdf</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-urdf-parser-plugin/">
+						<div class="block__body__list__item__key">ros-noetic-urdf-parser-plugin</div>
+						<div class="block__body__list__item__value">This package contains a C&#43;&#43; base class for URDF parsers.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-uuid-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-uuid-msgs</div>
+						<div class="block__body__list__item__value">ROS messages for universally unique identifiers.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-visualization-msgs/">
+						<div class="block__body__list__item__key">ros-noetic-visualization-msgs</div>
+						<div class="block__body__list__item__value">visualization_msgs is a set of messages used by higher level packages, such as rviz, that deal in visualization-specific data.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-web-video-server/">
+						<div class="block__body__list__item__key">ros-noetic-web-video-server</div>
+						<div class="block__body__list__item__value">HTTP Streaming of ROS Image Topics in Multiple Formats</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-web-video-server-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-web-video-server-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-web-video-server</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-xmlrpcpp/">
+						<div class="block__body__list__item__key">ros-noetic-xmlrpcpp</div>
+						<div class="block__body__list__item__value">XmlRpc&#43;&#43; is a C&#43;&#43; implementation of the XML-RPC protocol.</div>
+					</a>
+				
+					<a class="block__body__list__item block__body__list__item--kv" href="bookworm/ros-noetic-xmlrpcpp-dbgsym/">
+						<div class="block__body__list__item__key">ros-noetic-xmlrpcpp-dbgsym</div>
+						<div class="block__body__list__item__value">debug symbols for ros-noetic-xmlrpcpp</div>
+					</a>
+				
+			</div>
+		</div>
+	</div>
+	<div class="block" style="margin:15px 30px;">
+		<div class="block__title">Installation</div>
+		<div class="block__body block__body--monospace">
+			# Add the repository key<br />
+			<span style="color:#7a0874;font-weight:bold;">wget</span> <span style="color:#603">-O</span> - <span style="color:#f00;">'<span id="repo-key-url"><i>${REPO_URL}/key.asc</i></span>'</span> | <span style="color:#7a0874;font-weight:bold;">sudo apt-key add</span> - <br />
+			<br />
+			# Add the repository<br />
+			<span style="color:#7a0874;font-weight:bold;">echo</span> <span style="color:#f00;">'deb <span id="repo-url"><i>${REPO_URL}</i></span> bookworm main'</span> | <span style="color:#7a0874;font-weight:bold;">sudo tee</span> <span style="color:#603">-a</span> /etc/apt/sources.list<br />
+			<br />
+			# Update package lists<br />
+			<span style="color:#7a0874;font-weight:bold;">sudo apt update</span><br />
+			
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					var url = window.location.toString().match(/^(.*)\/packages\/.+?$/)[1];
+					document.getElementById("repo-url").innerHTML = "";
+					document.getElementById("repo-url").innerText = url;
+					document.getElementById("repo-key-url").innerHTML = "";
+					document.getElementById("repo-key-url").innerText = url + "/key.asc";
+				});
+			</script>
+		</div> 
+	</div>
+
+	</div>
+
+	<div class="footer">
+		Powered by <a href="https://github.com/pgaskin/repogen">repogen</a>
+	</div>
+
+	
+		<script src="search.bookworm.js"></script>
+	
+</body>
+</html>
+<!-- Yandex.Metrika counter --> <script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript" ></script> <script type="text/javascript" > try { var yaCounter73820410 = new Ya.Metrika({ id:73820410, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } </script> <noscript><div><img src="https://mc.yandex.ru/watch/73820410" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
