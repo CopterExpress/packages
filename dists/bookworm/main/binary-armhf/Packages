@@ -1,3 +1,22 @@
+Package: monkey
+Version: 1.6.9~buster-1
+Architecture: armhf
+Maintainer: Eduardo Silva <eduardo@monkey.io>
+Installed-Size: 2700
+Section: httpd
+Priority: optional
+Homepage: http://monkey-project.com
+Description: Fast and lightweight Web Server for Linux.
+ Monkey HTTP Server has been designed to be very scalable with low memory
+ and CPU consumption, the perfect solution for embedded environments. It
+ also provides a flexible API and plugins interface.
+Size: 1074704
+SHA512: 4e4352d2e45a6efec5ab281954a707a6b9c81e65895c1b6ab56c7b6ad190aca666cee497dd9c06e5db039f02b6d6c75c37f4ddfbd2d94a905e4c82b169441793
+SHA256: 0bb024f2b36fa2db1da0f1b556d647eb9428ecea8b02ce8fd07eda8ac11ecc3b
+SHA1: e230ad85e798290eff75f0f322b4daa818306d19
+MD5sum: 90d642777496c9af25fd1f6f3a083b06
+Filename: pool/main/m/monkey/monkey_1.6.9~buster-1_armhf.deb
+
 Package: ros-noetic-actionlib-dbgsym
 Source: ros-noetic-actionlib
 Version: 1.14.0-0bookworm
@@ -29,10 +48,10 @@ Homepage: http://wiki.ros.org/actionlib_msgs
 Description: actionlib_msgs defines the common messages to interact with an action server and an action client.
  For full documentation of the actionlib API see the actionlib package.
 Size: 11644
+MD5sum: a15a8bf51c2993435e3afc849f10807d
 SHA512: 396d0cf2c982d30c08d10844b1c685b559184a7921886939edb6bbfedc78368a2c3611f9aea1695fde809189df23e5df0fb692d16ff773f2b84cd3a2d4076593
 SHA256: b4d9a2752a7eeb5847f827963d53c5c5bb640e30cd32bdb8f6f37a7c2eb8a083
 SHA1: dc540bff645ea4c43fbe1c533481a87fe75c1d14
-MD5sum: a15a8bf51c2993435e3afc849f10807d
 Filename: pool/main/r/ros-noetic-actionlib-msgs/ros-noetic-actionlib-msgs_1.13.1-0bookworm_armhf.deb
 
 Package: ros-noetic-actionlib
@@ -47,10 +66,10 @@ Homepage: http://www.ros.org/wiki/actionlib
 Description: The actionlib stack provides a standardized interface for interfacing with preemptable tasks.
  Examples of this include moving the base to a target location, performing a laser scan and returning the resulting point cloud, detecting the handle of a door, etc.
 Size: 92496
-SHA512: 9a083594768fcc9127326db42fee5c4f88f7225ba242c11da9b8f2ea99b18b0db6af658d6b76db9204e83ef1d52ec1a817e5a5a5bc4c99060a8a8f2e0451d399
 SHA256: ab8e5a838b52145b50bd5d35cd5b6bd71d69872d1578cb1c72b39d1bcbe48067
 SHA1: 12c89e7cefe494d8f8f0a2e7f3ca28b6c4ff587f
 MD5sum: a6732725cc97eab735fd54a1cb286849
+SHA512: 9a083594768fcc9127326db42fee5c4f88f7225ba242c11da9b8f2ea99b18b0db6af658d6b76db9204e83ef1d52ec1a817e5a5a5bc4c99060a8a8f2e0451d399
 Filename: pool/main/r/ros-noetic-actionlib/ros-noetic-actionlib_1.14.0-0bookworm_armhf.deb
 
 Package: ros-noetic-angles
@@ -83,10 +102,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-async-web-server-cpp
 Build-Ids: af3edba9144495a52cc95c5b6fdd20ea5adc4c45
 Size: 2672892
+SHA512: 4dae9d5b6d1402b41089eb1f0df1616d76206f328afbb40d482efba4e649d32cdec107cf50519f30658c054ea62aef7bb308659fdc95624bb00cd0d1c8bac353
 SHA256: c272b1d70c1232732b5067c03c4423371403724659868883197f0a1fcffa32bc
 SHA1: 1ee93f8a32f6a97b65e54592e74c5dff484da7b8
 MD5sum: 2e33a9c4f8fdb40b6c1078e61e33b9c0
-SHA512: 4dae9d5b6d1402b41089eb1f0df1616d76206f328afbb40d482efba4e649d32cdec107cf50519f30658c054ea62aef7bb308659fdc95624bb00cd0d1c8bac353
 Filename: pool/main/r/ros-noetic-async-web-server-cpp-dbgsym/ros-noetic-async-web-server-cpp-dbgsym_1.0.3-0bookworm_armhf.deb
 
 Package: ros-noetic-async-web-server-cpp
@@ -100,10 +119,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/async_web_server_cpp
 Description: Asynchronous Web/WebSocket Server in C++
 Size: 123628
+MD5sum: f771f45c84eae1f6dfeb5a95059d24b9
 SHA512: c419887911bc27d836f6e90bd9868a94ce19c47349223ba06d9a0a2038e63bdcfb34da96512ab5394ddca1d5d44e660f91cec296b6ec5ceea01dd6e71eb90296
 SHA256: 1cf3faa438cf0503c5cfb70471e0aab0424fcdefbd4b956f5aa68c6baa94a95a
 SHA1: 62e9259923f8e33e33fd2e683651c2f6e6b47720
-MD5sum: f771f45c84eae1f6dfeb5a95059d24b9
 Filename: pool/main/r/ros-noetic-async-web-server-cpp/ros-noetic-async-web-server-cpp_1.0.3-0bookworm_armhf.deb
 
 Package: ros-noetic-bond
@@ -137,10 +156,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-bondcpp
 Build-Ids: 864701d91de1de8c20b45ae6ca7fa49614f463cb
 Size: 638292
-SHA512: 760bc6b1ae4a297428e6dda341cfee2df469e4c26ff7cbfa42db7a8c12efb59e801a0af664593b8930696bfbe3f4f2e9f5136eabb90f014fad6f42a6958c1816
 SHA256: fdda3f96b51664cb3809fee53266364cc7e066c12d70a96daa0ba444de4d818b
 SHA1: 23b4f14e269bcf62d64e7c988c0f506edc787969
 MD5sum: cdf01779c91d859986efd4f0457e2e15
+SHA512: 760bc6b1ae4a297428e6dda341cfee2df469e4c26ff7cbfa42db7a8c12efb59e801a0af664593b8930696bfbe3f4f2e9f5136eabb90f014fad6f42a6958c1816
 Filename: pool/main/r/ros-noetic-bondcpp-dbgsym/ros-noetic-bondcpp-dbgsym_1.8.6-0bookworm_armhf.deb
 
 Package: ros-noetic-bondcpp
@@ -154,10 +173,10 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/bondcpp
 Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
 Size: 47812
+SHA256: 0d91c96b6bbd59a08cbb33dabc9e59333a218e641f3fcbbef61c957552a4ee85
 SHA1: 0bbc22369febb3395415408abd9310ce6524856d
 MD5sum: 74a1bec271d85f32016396aed58aeaed
 SHA512: c8055a95dc532faa373fab0312b3d03e52c1bb19deedb9cebdcd64681689ef9c16e9c2f073c8f65831effdb9a180733796146dccb09fbdd2e7c39f64c1a1c16a
-SHA256: 0d91c96b6bbd59a08cbb33dabc9e59333a218e641f3fcbbef61c957552a4ee85
 Filename: pool/main/r/ros-noetic-bondcpp/ros-noetic-bondcpp_1.8.6-0bookworm_armhf.deb
 
 Package: ros-noetic-bondpy
@@ -190,10 +209,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-camera-calibration-parsers
 Build-Ids: b30b070e43d706cfa3f1caa65a8766b63ee71502 b7e0af2ef70661b7cfe56c860757341822280adc fd5af7c8ac11e33f5f3312bd73f5bbdb597b9f7c
 Size: 1192956
-SHA512: da83f23fa2e9bed3fda0ae88b4fad0830d668582f2b760eafd8749408cc1313da1c06c466016fe599313d46624b7d77a4e154522229ffbd730eceeb3c4776f6a
 SHA256: aad752187ff2a6339a54a26bc2bcee0794da2d2bb43084611bf04fab52f7ddd4
 SHA1: 28194484806a38b036f0a33929bc95faf5cd50eb
 MD5sum: 7542f1d17cc38d6d3445b420dd31bd43
+SHA512: da83f23fa2e9bed3fda0ae88b4fad0830d668582f2b760eafd8749408cc1313da1c06c466016fe599313d46624b7d77a4e154522229ffbd730eceeb3c4776f6a
 Filename: pool/main/r/ros-noetic-camera-calibration-parsers-dbgsym/ros-noetic-camera-calibration-parsers-dbgsym_1.12.0-0bookworm_armhf.deb
 
 Package: ros-noetic-camera-calibration-parsers
@@ -207,10 +226,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/camera_calibration_parsers
 Description: camera_calibration_parsers contains routines for reading and writing camera calibration parameters.
 Size: 61712
+SHA256: ee6cedc7879b0d16e4fecaa09f8d723947a397a46dc9bddc80dfccac3a8a49fa
 SHA1: 3a05ac4fada844c3fd72fdadefc6073831eb42c3
 MD5sum: 386b41f2d89c11894926cec635c63513
 SHA512: b2ff36c5f19ef029b731290e5389697687c2e125a99fd90afbbc3b0827004602ee2e19792a51c77b4560593c55b19e5e2a214a9733f3b17143a86c78a9d376a5
-SHA256: ee6cedc7879b0d16e4fecaa09f8d723947a397a46dc9bddc80dfccac3a8a49fa
 Filename: pool/main/r/ros-noetic-camera-calibration-parsers/ros-noetic-camera-calibration-parsers_1.12.0-0bookworm_armhf.deb
 
 Package: ros-noetic-camera-info-manager-dbgsym
@@ -226,10 +245,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-camera-info-manager
 Build-Ids: e5395b111bc41b076579da5398b2edeaddd35651
 Size: 404368
+SHA512: 7f7d7d7a9054d208d09608fb49616e16682bf3798a783e3f3ca0f887b44c2504468a70e94fd0619e8954323d1a5fc364d8d4511e5a22132a28ca62941715c519
 SHA256: d567b44e1f97751d066824f3984333eeb8e548c812796de43e79939588c3f6dc
 SHA1: c19a5530763ca36d8764e76d24b3f7e5404eca7e
 MD5sum: d881676d9d2214d57c7295da67b43b90
-SHA512: 7f7d7d7a9054d208d09608fb49616e16682bf3798a783e3f3ca0f887b44c2504468a70e94fd0619e8954323d1a5fc364d8d4511e5a22132a28ca62941715c519
 Filename: pool/main/r/ros-noetic-camera-info-manager-dbgsym/ros-noetic-camera-info-manager-dbgsym_1.12.0-0bookworm_armhf.deb
 
 Package: ros-noetic-camera-info-manager
@@ -244,10 +263,10 @@ Homepage: http://ros.org/wiki/camera_info_manager
 Description: This package provides a C++ interface for camera calibration information.
  It provides CameraInfo, and handles SetCameraInfo service requests, saving and restoring the camera calibration data.
 Size: 38976
-SHA512: 65febf3fbd3beb17bc9f6e4bcee4fab091d2da452c961d304337b7d9f6c72eccc3ce65f789b8a21b4f2d34b7864e6c63b92b56a73a90659986e9d9784bee46ae
 SHA256: c37cfd0744ef9ee0acf5ee3fab8b14de99ef03dbc294d36533d6bc45b9fa2a84
 SHA1: 0edd51c7186da293b23015104e65866e93640f8b
 MD5sum: 70ecf18e9b69cbe4ebc37f8379dc77f6
+SHA512: 65febf3fbd3beb17bc9f6e4bcee4fab091d2da452c961d304337b7d9f6c72eccc3ce65f789b8a21b4f2d34b7864e6c63b92b56a73a90659986e9d9784bee46ae
 Filename: pool/main/r/ros-noetic-camera-info-manager/ros-noetic-camera-info-manager_1.12.0-0bookworm_armhf.deb
 
 Package: ros-noetic-catkin
@@ -298,10 +317,10 @@ Homepage: http://ros.org/wiki/class_loader
 Description: The class_loader package is a ROS-independent package for loading plugins during runtime and the foundation of the higher level ROS &quot;pluginlib&quot; library.
  class_loader utilizes the host operating system's runtime loader to open runtime libraries (e.g. .so/.dll files), introspect the library for exported plugin classes, and allows users to instantiate objects of said exported classes without the explicit declaration (i.e. header file) for those classes.
 Size: 56468
-SHA1: 77edc6d694b30d06c944c9e4ef06144d52e00b7b
-MD5sum: 6032f3475d496444a1f56fba5da51684
 SHA512: a958bc9d192c37bbc50c9d5ba7059794084f4b309e236ce7f62de3629ba2d797272d19c0eaf722832ad88a7692f1250b8dd3bc376519b402bdde19bfd577f340
 SHA256: a050d5feca4addfc3c333af0e34e2cf437d98fca689604b32060f2d73647a3d4
+SHA1: 77edc6d694b30d06c944c9e4ef06144d52e00b7b
+MD5sum: 6032f3475d496444a1f56fba5da51684
 Filename: pool/main/r/ros-noetic-class-loader/ros-noetic-class-loader_0.5.0-0bookworm_armhf.deb
 
 Package: ros-noetic-cmake-modules
@@ -313,10 +332,10 @@ Section: misc
 Priority: optional
 Description: A common repository for CMake Modules which are not distributed with CMake but are commonly used by ROS packages.
 Size: 18780
-SHA1: 062599c153538365dc72037534f1386a6898d5ce
 MD5sum: 74b2db8ca8cf837826ca48eb5ed43be5
 SHA512: a4fd8cd29023a9787af67d0917fb5c430b0d62699ddaa1c984d99917240276a7a72dcadb7df08fb77ff0aabf69bc246021f84080f1b073cceb108f87788f2559
 SHA256: 9f772c48c2cacba25355c2a793032ae0ee3f4fca05ede7cfbfccde87f4d36f3b
+SHA1: 062599c153538365dc72037534f1386a6898d5ce
 Filename: pool/main/r/ros-noetic-cmake-modules/ros-noetic-cmake-modules_0.5.0-0bookworm_armhf.deb
 
 Package: ros-noetic-cpp-common-dbgsym
@@ -332,10 +351,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-cpp-common
 Build-Ids: b9a4a452f907b880c2ba63881b1feba50656c443
 Size: 140516
+SHA256: 699d980c03d307a8d156cafc4666df85aeeeafe97196ef1fdeacbf755982065c
 SHA1: 147ead7f638a5704979479df00d57c1eb82dabdc
 MD5sum: c47b0aa5a25060b71d760b1b899ac566
 SHA512: 6ae75b7dc21ea76f6f363d9cc119cdcb824262e369acaac95291b695b9a06bca674cf0a29545b261fbd73f13201f1f03ea23422cea3930127923fb1669cbf997
-SHA256: 699d980c03d307a8d156cafc4666df85aeeeafe97196ef1fdeacbf755982065c
 Filename: pool/main/r/ros-noetic-cpp-common-dbgsym/ros-noetic-cpp-common-dbgsym_0.7.3-0bookworm_armhf.deb
 
 Package: ros-noetic-cpp-common
@@ -350,10 +369,10 @@ Homepage: http://www.ros.org/wiki/cpp_common
 Description: cpp_common contains C++ code for doing things that are not necessarily ROS related, but are useful for multiple packages.
  This includes things like the ROS_DEPRECATED and ROS_FORCE_INLINE macros, as well as code for getting backtraces. This package is a component of roscpp.
 Size: 19792
-SHA512: 9e76d43e66480040583b3c87752d9259812cad7486d7819d6e41809af4c4a3f28e72c9fce9c1e4e37ebbf42ab674c83b46dc49de49e6a1f4e0cf0a438c6bceb6
-SHA256: fc95004a650d509324261c2bdfc6d7ebc873fa98999e771d93b44a2b51e4b39f
 SHA1: 57a02fe58ce01d3a3e1e2376add8bc96a941c164
 MD5sum: 97936d40ddd5e2be9988ed61d4783888
+SHA512: 9e76d43e66480040583b3c87752d9259812cad7486d7819d6e41809af4c4a3f28e72c9fce9c1e4e37ebbf42ab674c83b46dc49de49e6a1f4e0cf0a438c6bceb6
+SHA256: fc95004a650d509324261c2bdfc6d7ebc873fa98999e771d93b44a2b51e4b39f
 Filename: pool/main/r/ros-noetic-cpp-common/ros-noetic-cpp-common_0.7.3-0bookworm_armhf.deb
 
 Package: ros-noetic-cv-bridge-dbgsym
@@ -369,10 +388,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-cv-bridge
 Build-Ids: 843bdf5cfee13d091093f86b1d305d7bf43dc3ba f4fb9ae7b8dc74a3a9760cc387cacb491d622558
 Size: 816832
-SHA512: d2b9d1533add892edefb000b976189c6c9a31b1a5f9bcacf2ccb53eef3af83fd1b954f584dca10699b357969b867b1b4507100b3a92567b3550b8e2d6a69b335
 SHA256: 6e33378d83b11f06feea39f260cca35e45c1652bd8243d9afec780a4a2614514
 SHA1: 97fe427ad83cd27dfc89701574a36e8cf0815b75
 MD5sum: 5de1da47833ca120993d0d68f90d0942
+SHA512: d2b9d1533add892edefb000b976189c6c9a31b1a5f9bcacf2ccb53eef3af83fd1b954f584dca10699b357969b867b1b4507100b3a92567b3550b8e2d6a69b335
 Filename: pool/main/r/ros-noetic-cv-bridge-dbgsym/ros-noetic-cv-bridge-dbgsym_1.16.2-0bookworm_armhf.deb
 
 Package: ros-noetic-cv-bridge
@@ -386,10 +405,10 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/cv_bridge
 Description: This contains CvBridge, which converts between ROS Image messages and OpenCV images.
 Size: 79052
-MD5sum: f7887374b7ff1359f06faba118c940a6
-SHA512: 2c779c3bb55cdfac6198659f1bc346930f5d6e94207a06c35f14fdd8909c1437bee84ffb802b80aa77dad6bdcc7c6407110649514942f3764f48604d33e053e1
 SHA256: b415e74c2889f8c5e48e87a5417546750a8696ace7705c1f6e1c39e5c9870cba
 SHA1: 96100a7acb6c168f7613aea26be81c61cc229cd0
+MD5sum: f7887374b7ff1359f06faba118c940a6
+SHA512: 2c779c3bb55cdfac6198659f1bc346930f5d6e94207a06c35f14fdd8909c1437bee84ffb802b80aa77dad6bdcc7c6407110649514942f3764f48604d33e053e1
 Filename: pool/main/r/ros-noetic-cv-bridge/ros-noetic-cv-bridge_1.16.2-0bookworm_armhf.deb
 
 Package: ros-noetic-cv-camera-dbgsym
@@ -405,10 +424,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-cv-camera
 Build-Ids: 60d808fe44001d707576d0703d89ae08c74d0180 b87c239e609049a25143bdb60d0e148d7e17c580 d0eedf979c1d90d28c3a6d8a240f61b2aaeaee55
 Size: 1147932
+MD5sum: 2236aeaa892f757a3b93c5148f2f96b9
 SHA512: 202b87db9a4e2ee2f0717046b4019703cba6471c849a1eebf6e66f061a7657aa33d30f59292de9a90c95446bb1830a5479fa1d1c163ef147676e53d0419ae494
 SHA256: b31affa485718a5f1e9d83e8f460933be529f6d27d50c26a261f19d2602d4c0c
 SHA1: 61379963ab68f971411096be05c60b2d084e0b4b
-MD5sum: 2236aeaa892f757a3b93c5148f2f96b9
 Filename: pool/main/r/ros-noetic-cv-camera-dbgsym/ros-noetic-cv-camera-dbgsym_0.6.0-0bookworm_armhf.deb
 
 Package: ros-noetic-cv-camera-dbgsym
@@ -442,10 +461,10 @@ Homepage: http://wiki.ros.org/cv_camera
 Description: cv_camera uses OpenCV capture object to capture camera image.
  This supports camera_image and nodelet.
 Size: 46848
+SHA512: d5643c8fc6484629839243ef96eac1be100264b8e87bd5568c8f80989ebce03896574f682b0f1c9e9defcabd10b4822daf5ceeab18ee628555236651a5f9d3fa
 SHA256: e1bf281213129894471898452c0831b1d288db4c3b0c0c44afc861d114b6a935
 SHA1: 7d4b21e90272143f960b22ed40352b294e0a6bd2
 MD5sum: d9132178a2c0218b77a945935b653930
-SHA512: d5643c8fc6484629839243ef96eac1be100264b8e87bd5568c8f80989ebce03896574f682b0f1c9e9defcabd10b4822daf5ceeab18ee628555236651a5f9d3fa
 Filename: pool/main/r/ros-noetic-cv-camera/ros-noetic-cv-camera_0.6.0-0bookworm_armhf.deb
 
 Package: ros-noetic-cv-camera
@@ -460,10 +479,10 @@ Homepage: http://wiki.ros.org/cv_camera
 Description: cv_camera uses OpenCV capture object to capture camera image.
  This supports camera_image and nodelet.
 Size: 47312
-MD5sum: e48154d03fe75942da4d4661e1bb4030
 SHA512: 3e54cd2a2c6e84efe19f112c68c46f2c89efe5d6be82888b184cbc05408fc3902485a8630fde77e9598950699125babd3629217eeea4e2c6fc5d75fa5dfd3419
 SHA256: 2945276e63b670df8a0eab86018b07f2ddd76af21a2e48c596478843ae13773f
 SHA1: 99f989a4e0ebc50e68e22cb3cfbc243082436099
+MD5sum: e48154d03fe75942da4d4661e1bb4030
 Filename: pool/main/r/ros-noetic-cv-camera/ros-noetic-cv-camera_0.6.1-0bookworm_armhf.deb
 
 Package: ros-noetic-diagnostic-msgs
@@ -497,10 +516,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-diagnostic-updater
 Build-Ids: 2213ef04e154e1964d2dc5f88a204c9cecf4723a
 Size: 329556
-MD5sum: 5073cf045d3fec89307b2ebc3900a345
-SHA512: 0ca6c4ef2c710cc5302569b230705e1f903c92fd8b04f10d8e8c3cda53bc11de3cece2831744fe4b98a1af4cb25916359dbd5db1d2ba294307d82b32e110c919
 SHA256: dc65147afe49cc6da710f44e38a88f2806dcf11c60e3a3b348681034f7a401a4
 SHA1: 40be1d8e2d5904ed32808a024d100a8b2f59c6d8
+MD5sum: 5073cf045d3fec89307b2ebc3900a345
+SHA512: 0ca6c4ef2c710cc5302569b230705e1f903c92fd8b04f10d8e8c3cda53bc11de3cece2831744fe4b98a1af4cb25916359dbd5db1d2ba294307d82b32e110c919
 Filename: pool/main/r/ros-noetic-diagnostic-updater-dbgsym/ros-noetic-diagnostic-updater-dbgsym_1.11.0-0bookworm_armhf.deb
 
 Package: ros-noetic-diagnostic-updater
@@ -515,10 +534,10 @@ Homepage: http://www.ros.org/wiki/diagnostic_updater
 Description: diagnostic_updater contains tools for easily updating diagnostics.
  it is commonly used in device drivers to keep track of the status of output topics, device status, etc.
 Size: 53968
-SHA512: 17ea6f9f3648c49749953ad0bffd09305a7283be813fab0f3879556ab61f15072d862b8b17128358d6b53048d319ff40679fdd483a6bd04282682c5d9a0a9890
-SHA256: 8dc44af5a263e02a19dea152cd05eaa6410a90c6dbb68664f980f49e2f3d0540
 SHA1: df3ed8d196883edc5b05ef1dac4b6c95f6aafcd0
 MD5sum: a2535895013a05ec921c9b0de80ee160
+SHA512: 17ea6f9f3648c49749953ad0bffd09305a7283be813fab0f3879556ab61f15072d862b8b17128358d6b53048d319ff40679fdd483a6bd04282682c5d9a0a9890
+SHA256: 8dc44af5a263e02a19dea152cd05eaa6410a90c6dbb68664f980f49e2f3d0540
 Filename: pool/main/r/ros-noetic-diagnostic-updater/ros-noetic-diagnostic-updater_1.11.0-0bookworm_armhf.deb
 
 Package: ros-noetic-dynamic-reconfigure-dbgsym
@@ -534,10 +553,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-dynamic-reconfigure
 Build-Ids: b8f10b6245fdf53246b80a46dbb651b09df3128a
 Size: 53264
-SHA1: 808e7624ceb08e7f2dde18e01578b79fcf90f473
-MD5sum: c561091ec74d5197083f3cb3788e6022
 SHA512: 27a7eab44ad87e4075184fb1b4dbc6f95a07a6fc0024e96cae3d42121f9142f3c36d6765b3ace098f2ecd3489e4b90bba6a367382c601b1fcee30d69fd522862
 SHA256: 4a7c7ffc3d5eabc04202d5401a0c72f529caa7ad6951963a2b1565acd473615e
+SHA1: 808e7624ceb08e7f2dde18e01578b79fcf90f473
+MD5sum: c561091ec74d5197083f3cb3788e6022
 Filename: pool/main/r/ros-noetic-dynamic-reconfigure-dbgsym/ros-noetic-dynamic-reconfigure-dbgsym_1.7.3-0bookworm_armhf.deb
 
 Package: ros-noetic-dynamic-reconfigure
@@ -570,10 +589,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-eigen-conversions
 Build-Ids: ed0b3fb55301ecd521d1bcd71a70ab2c7600d0fa
 Size: 357952
-SHA256: 58491460ecea582aa7cdb4f2d6a2f33123489e373d658676b6c34cd7c7dc8d61
-SHA1: 63b737931bbb36624d09cf55f0e1735e442d6949
 MD5sum: 61dffcf588fb617b8ab04eead3eee74b
 SHA512: 1d37d40cf208ccf0d25a6e2159aedabfb3f4e2843795251f494a83a91f98391df0d2fa2707554c241aba6f5dba82c769d9444f6f7ad47cb174beeaf233ad886a
+SHA256: 58491460ecea582aa7cdb4f2d6a2f33123489e373d658676b6c34cd7c7dc8d61
+SHA1: 63b737931bbb36624d09cf55f0e1735e442d6949
 Filename: pool/main/r/ros-noetic-eigen-conversions-dbgsym/ros-noetic-eigen-conversions-dbgsym_1.13.2-0bookworm_armhf.deb
 
 Package: ros-noetic-eigen-conversions
@@ -603,10 +622,10 @@ Section: misc
 Priority: optional
 Description: C++ ROS message and service generators.
 Size: 17284
-MD5sum: ddea439866cd50ef01f1b136e0bc94f9
 SHA512: 5e0c412af0e5fad66d9d54dc0827ceefdbd21881329cbe598829042ee872e0eaf1be7df06160bf0b052e4e83474aa6eb33e25fb74afd11af5e212027e7f10263
 SHA256: c8c540c4bd83321896f8434cffeeef51c8d3a93097863f9c08f906695e4e13e0
 SHA1: 90887df3a92605702f53b5b65563e056b2605d99
+MD5sum: ddea439866cd50ef01f1b136e0bc94f9
 Filename: pool/main/r/ros-noetic-gencpp/ros-noetic-gencpp_0.7.0-0bookworm_armhf.deb
 
 Package: ros-noetic-geneus
@@ -619,10 +638,10 @@ Section: misc
 Priority: optional
 Description: EusLisp ROS message and service generators.
 Size: 38652
-SHA1: ba8859ff107630601eb06eec295a5b564029130c
-MD5sum: d6a111e7d3995d341e37af4a37d1937e
 SHA512: 5410c9878645d88680fb8936b1254539967f4a65dcd409a08a81e4f8af77fd1494d9d902012405311ea76b46488b7cfac6df7762cde3fa9d2e649797cd53bcb2
 SHA256: e328952e6ce5670fd27784adc58377400ac831ae5c4ad21295065c19ac274528
+SHA1: ba8859ff107630601eb06eec295a5b564029130c
+MD5sum: d6a111e7d3995d341e37af4a37d1937e
 Filename: pool/main/r/ros-noetic-geneus/ros-noetic-geneus_3.0.0-0bookworm_armhf.deb
 
 Package: ros-noetic-genlisp
@@ -636,10 +655,10 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/roslisp
 Description: Common-Lisp ROS message and service generators.
 Size: 30628
-SHA512: 6b9b425a6fd195f23765185a668873bc12efaa6d4bd4c69b9b0b5a34b20eab5e5ab12d68eace0116a0a65b2dc7b08e4084e8af717dde8b27d804c07fd323e7d4
 SHA256: e09071cf99ebcadb4062537b5c635bbe99a615987232379df66592aaed0084f8
 SHA1: e7c68e854d364e05acbe19c4704a6013bd1ffa97
 MD5sum: 6edef0b8c3588b962eea91c89ff34c8e
+SHA512: 6b9b425a6fd195f23765185a668873bc12efaa6d4bd4c69b9b0b5a34b20eab5e5ab12d68eace0116a0a65b2dc7b08e4084e8af717dde8b27d804c07fd323e7d4
 Filename: pool/main/r/ros-noetic-genlisp/ros-noetic-genlisp_0.4.18-0bookworm_armhf.deb
 
 Package: ros-noetic-genmsg
@@ -653,10 +672,10 @@ Priority: optional
 Homepage: http://wiki.ros.org/genmsg
 Description: Standalone Python library for generating ROS message and service data structures for various languages.
 Size: 44664
+SHA512: 27aa344c3cc2f0decf7800d40bcf4bc65e372de8aecb2e7aa6f5fb9429a91d9f60b128a2c778bdb0b00628ac10b7547c5b559d178aa67f245df15cd264b89953
 SHA256: ff9ac7954912a588b44c3ab4505d080a414e41f260a65e251dff73bec2d9f927
 SHA1: 8fa6495f1beb0d65bc2ade50e1016cb2ec09f8c9
 MD5sum: 69f077775af87ea89f6f11a0121adedf
-SHA512: 27aa344c3cc2f0decf7800d40bcf4bc65e372de8aecb2e7aa6f5fb9429a91d9f60b128a2c778bdb0b00628ac10b7547c5b559d178aa67f245df15cd264b89953
 Filename: pool/main/r/ros-noetic-genmsg/ros-noetic-genmsg_0.6.0-0bookworm_armhf.deb
 
 Package: ros-noetic-gennodejs
@@ -721,10 +740,10 @@ Homepage: http://wiki.ros.org/geometry_msgs
 Description: geometry_msgs provides messages for common geometric primitives such as points, vectors, and poses.
  These primitives are designed to provide a common data type and facilitate interoperability throughout the system.
 Size: 11412
-SHA256: 31e010e9acd91260a48e532bdac5d89e45bb1240eed13ade61228fffbe8c7bc2
-SHA1: ef60c5f702d132bfab455b60364e0b3c59fa81f0
 MD5sum: bee2ae7c27d6e5d11d815c66baa5755e
 SHA512: ea2c464e3ae7440ac7bac5a5a229537e87046bb9acfdfbd4b410acffe5d6cdc77fe5ea5aa14bd3036ea6648ec14c5ccfd598d9ff2e042d763ee1b2e5659d07df
+SHA256: 31e010e9acd91260a48e532bdac5d89e45bb1240eed13ade61228fffbe8c7bc2
+SHA1: ef60c5f702d132bfab455b60364e0b3c59fa81f0
 Filename: pool/main/r/ros-noetic-geometry-msgs/ros-noetic-geometry-msgs_1.13.1-0bookworm_armhf.deb
 
 Package: ros-noetic-image-geometry-dbgsym
@@ -794,10 +813,10 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/image_proc
 Description: Single image rectification and color processing.
 Size: 154380
-SHA1: 77cf50f51eaf7fd3715f0ac884a8f2bd4abe81f7
-MD5sum: 499d18a9c9f6de79d668b7fad0c823bb
 SHA512: 7db67f73309b78e1a860d49587aaf615be4e9e06f659cbd90c19b7969bcecddcab943f70db87eecd974d5db019e6dbdafd638fe5af08a2a11eb88b1f49f19b95
 SHA256: 449b4c931dc58302a896075fbae072afd49a57813a40bbdc4a476d1f85d711cd
+SHA1: 77cf50f51eaf7fd3715f0ac884a8f2bd4abe81f7
+MD5sum: 499d18a9c9f6de79d668b7fad0c823bb
 Filename: pool/main/r/ros-noetic-image-proc/ros-noetic-image-proc_1.17.0-0bookworm_armhf.deb
 
 Package: ros-noetic-image-publisher-dbgsym
@@ -830,10 +849,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/image_publisher
 Description: Contains a node publish an image stream from single image file or avi motion file.
 Size: 67640
-SHA512: 2aedb244d4d3e848c5e0835501f66b6c015313f9ae2e41836c644b608647fa411e3b58381294804f918b09cb9b8552490f2dcea71ff1f64211d81f33f7a4f7ae
 SHA256: ac608cebe8df2a7f48c4f0a1005cbbd7be6b30bf36a72b18e880537d9b679050
 SHA1: 29492395d14160f467bfa8e174bfa02d33c347f4
 MD5sum: 0f1abc0c4c66332b615d3630fc30f1f4
+SHA512: 2aedb244d4d3e848c5e0835501f66b6c015313f9ae2e41836c644b608647fa411e3b58381294804f918b09cb9b8552490f2dcea71ff1f64211d81f33f7a4f7ae
 Filename: pool/main/r/ros-noetic-image-publisher/ros-noetic-image-publisher_1.17.0-0bookworm_armhf.deb
 
 Package: ros-noetic-image-transport-dbgsym
@@ -867,10 +886,10 @@ Homepage: http://ros.org/wiki/image_transport
 Description: image_transport should always be used to subscribe to and publish images.
  It provides transparent support for transporting images in low-bandwidth compressed formats. Examples (provided by separate plugin packages) include JPEG/PNG compression and Theora streaming video.
 Size: 195692
-SHA512: 9187b5036806305fe90e5404f61c10ad952bf5125a9fc456de496937af1540f5322fcfe4b0bf11474926d05f7896925ec09d53b7817f935569bf2d1d978ac4b0
-SHA256: 5c262217399da46b7201e5d87d5bb54f2b4ccf75e2119aa5ae7c29a2d0344de8
 SHA1: 32a8331f0b59edd258e7045a95584021ac6f94d0
 MD5sum: 7b39d48f3e075968b8cbc270f5a5c451
+SHA512: 9187b5036806305fe90e5404f61c10ad952bf5125a9fc456de496937af1540f5322fcfe4b0bf11474926d05f7896925ec09d53b7817f935569bf2d1d978ac4b0
+SHA256: 5c262217399da46b7201e5d87d5bb54f2b4ccf75e2119aa5ae7c29a2d0344de8
 Filename: pool/main/r/ros-noetic-image-transport/ros-noetic-image-transport_1.12.0-0bookworm_armhf.deb
 
 Package: ros-noetic-led-msgs
@@ -884,10 +903,10 @@ Priority: optional
 Homepage: https://github.com/CopterExpress/ros_led
 Description: Messages for LEDs and LED strips
 Size: 24568
-SHA512: b2c6acb3dc733b0a9ffd90ccc61b6e3304056e3495577a98612e687e445a307916fc629e3ca36f74668ba90ae452d1fcd38fac6833e667460d3579be881ccefb
 SHA256: 887852ca148f29bd07ce5fe62010c1585a083ee9f5d5e0ce2bf8b8fae8998fd9
 SHA1: 544ac5e09d5be51326021c491f58d68593da6148
 MD5sum: f1487883b23789da8556b524e97bc3bb
+SHA512: b2c6acb3dc733b0a9ffd90ccc61b6e3304056e3495577a98612e687e445a307916fc629e3ca36f74668ba90ae452d1fcd38fac6833e667460d3579be881ccefb
 Filename: pool/main/r/ros-noetic-led-msgs/ros-noetic-led-msgs_0.0.13-0bookworm_armhf.deb
 
 Package: ros-noetic-libmavconn-dbgsym
@@ -903,10 +922,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-libmavconn
 Build-Ids: d0ffbb0d3f2e855d297fdf6c56eea5d71c9bfdf8
 Size: 2409220
-SHA1: 979a26db31bcbad3d868fd29e8537504e1232901
 MD5sum: 4dd042d29dfb13cd798f0d49ba29fcdf
 SHA512: 19cb62cd85de823d3223d7feefdc1e9176d17a70dc38e5ab8363d8c6ca322378bc9fd8e2bee915bbfa229b2ec172df4f7b4d4b750609a97a5b19a628fb0f795e
 SHA256: fd8d5f499f8a94fbc99ceed6bb7f830a22a4bf1246ac24d2c76c979f389f875f
+SHA1: 979a26db31bcbad3d868fd29e8537504e1232901
 Filename: pool/main/r/ros-noetic-libmavconn-dbgsym/ros-noetic-libmavconn-dbgsym_1.18.0-0bookworm_armhf.deb
 
 Package: ros-noetic-libmavconn
@@ -921,10 +940,10 @@ Homepage: http://wiki.ros.org/mavros
 Description: MAVLink communication library.
  This library provide unified connection handling classes and URL to connection object mapper. This library can be used in standalone programs.
 Size: 108472
-MD5sum: cb77ee672fc52d06ff8467d0be1d660c
-SHA512: 83810575508a21a93afd9a8329a48988fc469abe37e2355843533459a53c5f50e2029c8bdafabbc71ba18876a724ac9bb7a480b6eb353fb85ef747be3460fa10
 SHA256: 86f576774d177bd85753c6ed18228585fd03da39ccfc99cf440899d003200818
 SHA1: 9ec10d7bdeaeca5ae0a32daf3a55685ebdb4e722
+MD5sum: cb77ee672fc52d06ff8467d0be1d660c
+SHA512: 83810575508a21a93afd9a8329a48988fc469abe37e2355843533459a53c5f50e2029c8bdafabbc71ba18876a724ac9bb7a480b6eb353fb85ef747be3460fa10
 Filename: pool/main/r/ros-noetic-libmavconn/ros-noetic-libmavconn_1.18.0-0bookworm_armhf.deb
 
 Package: ros-noetic-mavlink
@@ -939,10 +958,10 @@ Homepage: https://mavlink.io/en/
 Description: MAVLink message marshaling library.
  This package provides C-headers and C++11 library for both 1.0 and 2.0 versions of protocol. For pymavlink use separate install via rosdep (python-pymavlink).
 Size: 890268
+SHA1: 10dbc61884a04254e2f54ccef3fc1ee3006f4896
 MD5sum: d1b95d5b78a0cbde8d97f4f8634812f2
 SHA512: a1ca0fd0be4957af966db846144def24f3e012c936ba6bf5dc029417cb8de3cf839edc57186ffbaf61cd757dd5dc0000da1e868e54b7ee084919f9d9e7874f2d
 SHA256: 636e78d7ea87aa3f3545951821145bf6039a7cf9e66a3dfcfdafed950ec275b0
-SHA1: 10dbc61884a04254e2f54ccef3fc1ee3006f4896
 Filename: pool/main/r/ros-noetic-mavlink/ros-noetic-mavlink_2024.3.3-0bookworm_armhf.deb
 
 Package: ros-noetic-mavros-dbgsym
@@ -958,10 +977,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-mavros
 Build-Ids: 4674a59e942ed86cd6c652b5f2e11fae0b53204a 7d680638a25c970cb9c8f929030c518b719757b7 c16281785810b639c207f31e8f2c5c81da8542fb ffb2bda23270e91f54209ff0ea1b423b5832c050
 Size: 27793144
+SHA1: 4e7b23a6bb55696da4ebf3499f3afcb30a4b10e8
 MD5sum: 151e0550b2f6d5a924d096573de5b2ce
 SHA512: 24a9859ede37268b8120e7a3b09f345a5ca3b8d2610fae4b2f2b9a6beae68df6d9ef7c30bad438c8435ae9e5b9e9ba53eddd914a2d71449881105cddd7740e19
 SHA256: ae26b9d03868f6483702e89c99b77b714b5ff86994ee119d5f7ab3d561de2c44
-SHA1: 4e7b23a6bb55696da4ebf3499f3afcb30a4b10e8
 Filename: pool/main/r/ros-noetic-mavros-dbgsym/ros-noetic-mavros-dbgsym_1.18.0-0bookworm_armhf.deb
 
 Package: ros-noetic-mavros-extras-dbgsym
@@ -994,10 +1013,10 @@ Priority: optional
 Homepage: http://wiki.ros.org/mavros_extras
 Description: Extra nodes and plugins for MAVROS.
 Size: 385992
-SHA1: c1d2520374a6f6625601c1d160dc1d9c4eae1425
-MD5sum: 2cece3a78afe56885cd85e3e7756c751
 SHA512: a044ef3a830f735b8e42073f1c3e1c9b8821cfac40a16c28397a1b29cb78183c22038d128e0f95fef12191591c592173be01804b8986187ba5dc71ef9d7ddaad
 SHA256: 5efa682fcad182f1f7b56c9f8ea447b3f189fbebd88b7e92f7a838ec66d28bc8
+SHA1: c1d2520374a6f6625601c1d160dc1d9c4eae1425
+MD5sum: 2cece3a78afe56885cd85e3e7756c751
 Filename: pool/main/r/ros-noetic-mavros-extras/ros-noetic-mavros-extras_1.18.0-0bookworm_armhf.deb
 
 Package: ros-noetic-mavros-msgs
@@ -1028,10 +1047,10 @@ Priority: optional
 Homepage: http://wiki.ros.org/mavros
 Description: MAVROS -- MAVLink extendable communication node for ROS with proxy for Ground Control Station.
 Size: 802624
-SHA512: 6976158d607766aed486785bbd59ac6fe7aa42ad6a014f0fbb545cd238025adcb85f76dcdb543f561e632ed2d735d673d119aa1d4197d3c0e558c9a007bc8f0c
-SHA256: 8a51968f75021b670d5872f9391747a320fe312b158d4ef7ee7896e1fc64de7d
 SHA1: 5609a9c7a56f1400534a3e4303af0cd60c101d65
 MD5sum: 67daab243408894107fb72630b5f0894
+SHA512: 6976158d607766aed486785bbd59ac6fe7aa42ad6a014f0fbb545cd238025adcb85f76dcdb543f561e632ed2d735d673d119aa1d4197d3c0e558c9a007bc8f0c
+SHA256: 8a51968f75021b670d5872f9391747a320fe312b158d4ef7ee7896e1fc64de7d
 Filename: pool/main/r/ros-noetic-mavros/ros-noetic-mavros_1.18.0-0bookworm_armhf.deb
 
 Package: ros-noetic-message-filters-dbgsym
@@ -1064,10 +1083,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/message_filters
 Description: A set of message filters which take in messages and may output those messages at a later time, based on the conditions that filter needs met.
 Size: 36952
+SHA512: fe7cfc26c140bac09098d1090193c7a16b92f2fe83e5bd16d0ffc4277c68faee188756cf60ab0ec7909c94a292e8cf577a8bbfb71e6adf2b7b356789890a75c6
 SHA256: 73fce07722ef838b39358e00c5437a1a8bead411c0ad2cbdaf0ebc9e15ee5e39
 SHA1: ff2a528d7e61211e55d0b5907ed05566604d54ea
 MD5sum: a144485211f0ed3b28a38350fd2ec66c
-SHA512: fe7cfc26c140bac09098d1090193c7a16b92f2fe83e5bd16d0ffc4277c68faee188756cf60ab0ec7909c94a292e8cf577a8bbfb71e6adf2b7b356789890a75c6
 Filename: pool/main/r/ros-noetic-message-filters/ros-noetic-message-filters_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-message-generation
@@ -1098,10 +1117,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/message_runtime
 Description: Package modeling the run-time dependencies for language bindings of messages.
 Size: 4908
-SHA256: 8d071209872215dab3a039aeb6479a4e9de621a209080d082c7e892c3e2b86cc
-SHA1: df5d3beffae7057efa7e24e5cf15866a29e2370c
 MD5sum: 5faafe565d60ea326ce8d948c67e770b
 SHA512: 892869340300d4ec7e99659f68789e4ab381da09b7006f5f09f3a20c45082389d8b0feeb9b48842605f43ed60991b29d1ab9e7e3ca013f654bcd5f390ba975bc
+SHA256: 8d071209872215dab3a039aeb6479a4e9de621a209080d082c7e892c3e2b86cc
+SHA1: df5d3beffae7057efa7e24e5cf15866a29e2370c
 Filename: pool/main/r/ros-noetic-message-runtime/ros-noetic-message-runtime_0.4.13-0bookworm_armhf.deb
 
 Package: ros-noetic-mk
@@ -1116,10 +1135,10 @@ Homepage: http://www.ros.org/wiki/ROS
 Description: A collection of .mk include files for building ROS architectural elements.
  Most package authors should use cmake .mk, which calls CMake for the build of the package. The other files in this package are intended for use in exotic situations that mostly arise when importing 3rdparty code.
 Size: 10728
+MD5sum: 519e6d0bda0e2c0922d03ef925e5c688
 SHA512: f47a57acb36f05b624c5f21f5f3d1290caac8889d8b262f77021f08b7f68de0d59663841974f9122ec3f68d34d3d7e0a98733f1d29b7b40ce25d477e76f4f82d
 SHA256: 031ead9f19fbe08f3648c7effc49aa6cba346b9372a2f85b9148c47b2ad70762
 SHA1: 8a61ba4a852a35cfd91dac48e6aa50b6dc12f933
-MD5sum: 519e6d0bda0e2c0922d03ef925e5c688
 Filename: pool/main/r/ros-noetic-mk/ros-noetic-mk_1.15.8-0bookworm_armhf.deb
 
 Package: ros-noetic-nav-msgs
@@ -1133,10 +1152,10 @@ Priority: optional
 Homepage: http://wiki.ros.org/nav_msgs
 Description: nav_msgs defines the common messages used to interact with the navigation stack.
 Size: 11052
-SHA1: ba9f5b6b9e5e394339bc1086678834fae0ad0632
 MD5sum: 85edcb9b284da74a63f1bf07dc9d1d6a
 SHA512: 974ff3e3c4f328fd81ea50f28a9a6a2ec5b69af622a27949f235534bfb6d1593ad9fd34b6b89298c10141e70555c8a693dc9897a127d36d20c4d3463d5dfd423
 SHA256: 69749f8cf325f01959ee84a1234051f4420f44934213dc8c6fef5cbc0e3fd6a5
+SHA1: ba9f5b6b9e5e394339bc1086678834fae0ad0632
 Filename: pool/main/r/ros-noetic-nav-msgs/ros-noetic-nav-msgs_1.13.1-0bookworm_armhf.deb
 
 Package: ros-noetic-nodelet-dbgsym
@@ -1152,10 +1171,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-nodelet
 Build-Ids: b41722f0ced32bc63a52c75550ede7a44a612463 f63d0fe41f8a4ebfcc2f9af2af7e67b85f3d1a2a
 Size: 1922744
+MD5sum: 9b725cfc9fb7862747052133592c4fc0
 SHA512: 8336d33a95a6532584143cbbdd34540c6db2015ee6849fd7ef274d244407939cf3d85a629352ed334e1f096173f40131bfbeb592d37fd1ffbe1e09e53b8550d4
 SHA256: 4acb93ffecc6593470f96e87f2b330b13f228b437f3788c5b1267aa92272f6c3
 SHA1: 50ec8daa4b0acaf84c9685b4acf1f3d1a62fdc17
-MD5sum: 9b725cfc9fb7862747052133592c4fc0
 Filename: pool/main/r/ros-noetic-nodelet-dbgsym/ros-noetic-nodelet-dbgsym_1.11.0-0bookworm_armhf.deb
 
 Package: ros-noetic-nodelet-topic-tools
@@ -1169,10 +1188,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/nodelet_topic_tools
 Description: This package contains common nodelet tools such as a mux, demux and throttle.
 Size: 17256
-MD5sum: f0bbd0401d3955771a923071429ac855
 SHA512: f5caf0defecbe0c4ea89e867aaafa6a5b6b76135422fc74bc535c302fbbd2746fec02ec85660a867d54d91366171bb732143b2c4d33560cb6257c8aa19c2d2c1
 SHA256: ec4eeb591c27736725a0cc639979e04fbaaf505e3d7d570ace3b3e6de1dc66dc
 SHA1: 3c492d8a8ba32a6995ba3d16ffd2111307b9b5a3
+MD5sum: f0bbd0401d3955771a923071429ac855
 Filename: pool/main/r/ros-noetic-nodelet-topic-tools/ros-noetic-nodelet-topic-tools_1.11.0-0bookworm_armhf.deb
 
 Package: ros-noetic-nodelet
@@ -1187,10 +1206,10 @@ Homepage: http://ros.org/wiki/nodelet
 Description: The nodelet package is designed to provide a way to run multiple algorithms in the same process with zero copy transport between algorithms.
  This package provides both the nodelet base class needed for implementing a nodelet, as well as the NodeletLoader class used for instantiating nodelets.
 Size: 117568
-SHA1: b3b3a0e23be24c8b21b5f71a285b7aebefc90bed
-MD5sum: b2f49156ed6d585844f94bb75441ab43
 SHA512: 14e1d39b9098d1ae4c007693ee6f74b4598f57a46cbe6ef9239ac1105e80d94b8d9de006ce5e8e398f93687cd0df6b2cda4abfe365f98675c07c58d33ce0f799
 SHA256: 4e2b09031502d4e8c02f247a28a9bbc9a9b24e0b16bef859de9758f849b3a808
+SHA1: b3b3a0e23be24c8b21b5f71a285b7aebefc90bed
+MD5sum: b2f49156ed6d585844f94bb75441ab43
 Filename: pool/main/r/ros-noetic-nodelet/ros-noetic-nodelet_1.11.0-0bookworm_armhf.deb
 
 Package: ros-noetic-pluginlib
@@ -1205,10 +1224,10 @@ Homepage: http://www.ros.org/wiki/pluginlib
 Description: The pluginlib package provides tools for writing and dynamically loading plugins using the ROS build infrastructure.
  To work, these tools require plugin providers to register their plugins in the package.xml of their package.
 Size: 22208
+MD5sum: 32ebd69edf7d54ecee09033f75e4b631
 SHA512: 66df6c4fdf932e34f8df608efe1b223c169d0ec3bb27431f7efd83857b7f1d7dfcfc267423a240f6ce5a3f4302a54fd9012eb1c10a6b7f4d9c4064b4dec5125c
 SHA256: af56a98a288077ea194e72ea7f456af2d39a463169732a7f6228fbe5467840c7
 SHA1: 9e7a1f5406827e04609886b1689501869c5e0f64
-MD5sum: 32ebd69edf7d54ecee09033f75e4b631
 Filename: pool/main/r/ros-noetic-pluginlib/ros-noetic-pluginlib_1.13.0-0bookworm_armhf.deb
 
 Package: ros-noetic-ros-environment
@@ -1220,10 +1239,10 @@ Section: misc
 Priority: optional
 Description: The package provides the environment variables `ROS_VERSION`, `ROS_DISTRO`, `ROS_PACKAGE_PATH`, and `ROS_ETC_DIR`.
 Size: 5780
-SHA256: 3aef643e7bf55bb1535a43922508df2138b3148797c6777a3385e4992d892806
-SHA1: d7222364587ef899d12bdb9b54102ee285155726
 MD5sum: 7208b8f4ce4c985c880c3d246ea7f632
 SHA512: b67076d6d49bfbbeaa812305014f4fbf542bbcb479ab2088d491be4537440b48a40282c9c18bc96a782d4da3101ae3284658f5fe42ff625874071aa36e87191f
+SHA256: 3aef643e7bf55bb1535a43922508df2138b3148797c6777a3385e4992d892806
+SHA1: d7222364587ef899d12bdb9b54102ee285155726
 Filename: pool/main/r/ros-noetic-ros-environment/ros-noetic-ros-environment_1.3.2-0bookworm_armhf.deb
 
 Package: ros-noetic-ros-pytest
@@ -1236,10 +1255,10 @@ Section: misc
 Priority: optional
 Description: The ros_pytest package
 Size: 10016
-SHA512: a337c0511dafde9641d2759ef696077585cc4ea9be23874b92e00c8418502a021d479748069c67c983a6c8ffca8adb9c66e9f27784479678e7bd2cf77724685a
-SHA256: fc6c6b49c914b6d9535045c528141b6ae218c49add5a399d9c92e3ae073ef399
 SHA1: 039262d32198cde60a72b61ffb107869bbb58372
 MD5sum: 82165d2a73f9d0b91b8236d9bad4c6e5
+SHA512: a337c0511dafde9641d2759ef696077585cc4ea9be23874b92e00c8418502a021d479748069c67c983a6c8ffca8adb9c66e9f27784479678e7bd2cf77724685a
+SHA256: fc6c6b49c914b6d9535045c528141b6ae218c49add5a399d9c92e3ae073ef399
 Filename: pool/main/r/ros-noetic-ros-pytest/ros-noetic-ros-pytest_0.2.1-0bookworm_armhf.deb
 
 Package: ros-noetic-rosapi
@@ -1253,10 +1272,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/rosapi
 Description: Provides service calls for getting ros meta-information, like list of topics, services, params, etc.
 Size: 27832
-MD5sum: 55595c79aa7328034c6c6c4720e9f5ae
 SHA512: a4bab21dfcd3df880fc3bbf0f672820b42a80f628bca8a1dbc52d6cac2e2cd48894d638eb6a56d8e253340d78ee62d338384e8e04228bb0115cecf28048f4cfa
 SHA256: 91ed0b3112cfa3c5e7d85434c3ccb2a5ef9301a2162aec2912cb9cce1837f497
 SHA1: b8018f0af46e8cfe3b192fc305c8f42729d7e744
+MD5sum: 55595c79aa7328034c6c6c4720e9f5ae
 Filename: pool/main/r/ros-noetic-rosapi/ros-noetic-rosapi_0.11.17-0bookworm_armhf.deb
 
 Package: ros-noetic-rosauth-dbgsym
@@ -1289,10 +1308,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/rosauth
 Description: Server Side tools for Authorization and Authentication of ROS Clients
 Size: 19956
-SHA512: bb7bf56d1ae2e9f92e578a9ca4f53977ba5e28709f67a60827dd9daa2855d6e4b0c86fe488195221e069664d1434ed23b4eea8d4954ad1492206d495f9ffd8da
 SHA256: 2b55dcb8c10e23a2cf9323404bbd427bc737939956fd22dfd78ebb0f6d4f2d74
 SHA1: d2147c27c1840efe925d75bfff1de57eb9cbe665
 MD5sum: dfb7fd63f6441842e1674b77aa0a7f0b
+SHA512: bb7bf56d1ae2e9f92e578a9ca4f53977ba5e28709f67a60827dd9daa2855d6e4b0c86fe488195221e069664d1434ed23b4eea8d4954ad1492206d495f9ffd8da
 Filename: pool/main/r/ros-noetic-rosauth/ros-noetic-rosauth_1.0.1-0bookworm_armhf.deb
 
 Package: ros-noetic-rosbag-dbgsym
@@ -1308,10 +1327,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-rosbag
 Build-Ids: 71513af8651e6e9e5a243de7ea430ee74bd78293 7a3206c79a81b981e1a11e57822d96a93d51c17a a5c818dd8fa7dba9246416a11456fd037c10d929 d56d14e72169474c497c67c51ad44cb3531c99cb
 Size: 4431312
-MD5sum: dec2236bd0a14fae243cf6b118780514
 SHA512: 642cf66b1f743b34e548e09cf840288503198799c1d7a1c73117ab606f2af9f5e4cb87d425ef7614462a079249b171076852523b49bbeb0c26077a480b9ffd09
 SHA256: f4980b895e7c17ba354210b86f5917ff06aa29386eda8b64cbc23f142dd46aab
 SHA1: c1b510b80532c90612ac7a9f52e6365018af2059
+MD5sum: dec2236bd0a14fae243cf6b118780514
 Filename: pool/main/r/ros-noetic-rosbag-dbgsym/ros-noetic-rosbag-dbgsym_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rosbag-migration-rule
@@ -1324,10 +1343,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/rosbag_migration_rule
 Description: This empty package allows to export rosbag migration rule files without depending on rosbag.
 Size: 4724
-SHA1: b10ae72012aeba24863b772b92633ceb89dbddf2
 MD5sum: a9b1f88c7de26ad821d5295e28c4bb57
 SHA512: 057c06b4153d5dc565bd594633c56395417c52fde5cb9f477c289a4c9fcc576a8bc653538b20014217d8da2b3932fd00e0c33c6c6679abf6f722018ea76443a8
 SHA256: 89fe868b83f049ae67c294886ef05d0cefdaa485d90f418cd4089f860e8353f4
+SHA1: b10ae72012aeba24863b772b92633ceb89dbddf2
 Filename: pool/main/r/ros-noetic-rosbag-migration-rule/ros-noetic-rosbag-migration-rule_1.0.1-0bookworm_armhf.deb
 
 Package: ros-noetic-rosbag-storage-dbgsym
@@ -1394,10 +1413,10 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/rosbash
 Description: Assorted shell commands for using ros with bash.
 Size: 22564
-MD5sum: df2f73651bf6a5c703cec9868a0bb626
-SHA512: d685e2e1ba131c8d1a4842b5d8b1f7b714b197a64aa47c443f908da0436dc8b0221150760158fdb2eb240c30c35caeb710af386246b1f53ee652c7a504b5d1ea
 SHA256: 8363f51a13732de98504f0f1b69c49eceaf27dce9006c0bfe07354e8b6ea0976
 SHA1: eb9f6604ad8ca39d01b9bdcc0474fb3015d1eaa7
+MD5sum: df2f73651bf6a5c703cec9868a0bb626
+SHA512: d685e2e1ba131c8d1a4842b5d8b1f7b714b197a64aa47c443f908da0436dc8b0221150760158fdb2eb240c30c35caeb710af386246b1f53ee652c7a504b5d1ea
 Filename: pool/main/r/ros-noetic-rosbash/ros-noetic-rosbash_1.15.8-0bookworm_armhf.deb
 
 Package: ros-noetic-rosboost-cfg
@@ -1428,10 +1447,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/rosbridge_library
 Description: The core rosbridge package, responsible for interpreting JSON and performing the appropriate ROS action, like subscribe, publish, call service, and interact with params.
 Size: 95420
-SHA256: 047bdbee754ba7a15737158ca1ab9c4e179ba0060f1334eac3bd6acb3a428366
 SHA1: a788a5bfc5643c9d095f8d92a9b2ef7b6833566a
 MD5sum: afb0a9edbaca6f1c60a4eab5f9079632
 SHA512: 800aa1c04e5ea324bb4245402836f48d0334235e45144aa4867f850a5c0f35191146304e94311537e2d7106f80007e612263710adeb95e13f4ba87aaf5d10a91
+SHA256: 047bdbee754ba7a15737158ca1ab9c4e179ba0060f1334eac3bd6acb3a428366
 Filename: pool/main/r/ros-noetic-rosbridge-library/ros-noetic-rosbridge-library_0.11.17-0bookworm_armhf.deb
 
 Package: ros-noetic-rosbridge-msgs
@@ -1478,10 +1497,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/rosbuild
 Description: rosbuild contains scripts for managing the CMake-based build system for ROS.
 Size: 28608
-SHA512: 0f7da79b74aa6cc124a6e7289db07a70b304500be602e2b93d1319037af6220ea106b97142b98701a0e5f0a840c9a2de0d0fd95437b84cdcab9bd49b2709aa40
-SHA256: f791e6eae066de876bf1718b1f427a741afdc394a396cd77ea2b8ab6f9645be3
 SHA1: 7fa36e3d3c19919b68108f2637d19e87fb14cb77
 MD5sum: 823cbca8d5f6d83067f32b483e5e45be
+SHA512: 0f7da79b74aa6cc124a6e7289db07a70b304500be602e2b93d1319037af6220ea106b97142b98701a0e5f0a840c9a2de0d0fd95437b84cdcab9bd49b2709aa40
+SHA256: f791e6eae066de876bf1718b1f427a741afdc394a396cd77ea2b8ab6f9645be3
 Filename: pool/main/r/ros-noetic-rosbuild/ros-noetic-rosbuild_1.15.8-0bookworm_armhf.deb
 
 Package: ros-noetic-rosclean
@@ -1515,10 +1534,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-rosconsole-bridge
 Build-Ids: cb279b34830133e44eabb8fb9d1ebd2b54a42937
 Size: 54656
-SHA256: 813ea9ac6cd1441628c9cfbf1de3a35590ca1cfedafa13d75dd066596b183cb5
 SHA1: fdf6318a9d0f96ebebab84e0a16f54a8ca54cad2
 MD5sum: f927efe6f6cac63d82afa97c941375e2
 SHA512: 5ea2dbc98d11b9a7995a17f7c02fd2383c8916c2db360c79ca766b3657eb8f1c1a3a4f3ba233d849bfe1921245defd7eae9e2734768217782bc90fb771f1bc58
+SHA256: 813ea9ac6cd1441628c9cfbf1de3a35590ca1cfedafa13d75dd066596b183cb5
 Filename: pool/main/r/ros-noetic-rosconsole-bridge-dbgsym/ros-noetic-rosconsole-bridge-dbgsym_0.5.4-0bookworm_armhf.deb
 
 Package: ros-noetic-rosconsole-bridge
@@ -1551,10 +1570,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-rosconsole
 Build-Ids: 6c189e5550405350b3ecbbe3b50b385a7f52ed5f 9ea2adb4e9a8019aedec357c51b08f0871493084 c66d755bc4691bbb970fa90189ee9835edbd41a6
 Size: 1234996
-SHA1: 5cbc96f1e9a1b5a635109f4ab5d44f07aa37015d
-MD5sum: de34fe70efad804239f65ba5cc8313c9
 SHA512: 2a168bce444e9fd8c9dceabeb2e60cad3bd355180aab5f1a9692ec64ab4bb95744ad8a58c6fa1c74bccf73ba0083169f096a865ee2aba099f4d5cc1e08077061
 SHA256: e88b812644e2fc2344d6193f556cee66511c3e929724c7b1b366e7010507c0d5
+SHA1: 5cbc96f1e9a1b5a635109f4ab5d44f07aa37015d
+MD5sum: de34fe70efad804239f65ba5cc8313c9
 Filename: pool/main/r/ros-noetic-rosconsole-dbgsym/ros-noetic-rosconsole-dbgsym_1.14.3-0bookworm_armhf.deb
 
 Package: ros-noetic-rosconsole
@@ -1606,10 +1625,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-roscpp-serialization
 Build-Ids: a6c26aa959169ffb65401abbe564f528b497c719
 Size: 31100
+SHA256: 8439f14edc6e01409a31cbcc62b02ebf6197dc390a834d88e53cfbdd297f249e
 SHA1: 74877f97d8ee0d3b753410905a438d3792fc57f7
 MD5sum: 50bd5f1b08e85e66361886aa87e7e6bb
 SHA512: fc8b816dc072a32f871f0ee21f290037c13dc3cd36a0c564270a7faccc2384e9eca1c37f094aba407f1a3d3449838d926132c664737268766d33d1d620506499
-SHA256: 8439f14edc6e01409a31cbcc62b02ebf6197dc390a834d88e53cfbdd297f249e
 Filename: pool/main/r/ros-noetic-roscpp-serialization-dbgsym/ros-noetic-roscpp-serialization-dbgsym_0.7.3-0bookworm_armhf.deb
 
 Package: ros-noetic-roscpp-serialization
@@ -1642,10 +1661,10 @@ Homepage: http://ros.org/wiki/roscpp_traits
 Description: roscpp_traits contains the message traits code as described in MessagesTraits.
  This package is a component of roscpp.
 Size: 10780
-SHA256: 9b37c211c41fc1c558d58249d83cfe5e0079ade270d32f612724e8246d2d5013
-SHA1: eb8952b5728e5b3e8f71ee36c0b56b7865969055
 MD5sum: 3e597642317ffeaf90d171a5745f9118
 SHA512: 65c1dbcc5f03bf603dd2c6cd3f3e3eb3e73caeb90becca40fbc65b7420296d6cf0644123544f9b68c7b3507465c568bb6bdc3952776a2234d8e6e8af47027a0d
+SHA256: 9b37c211c41fc1c558d58249d83cfe5e0079ade270d32f612724e8246d2d5013
+SHA1: eb8952b5728e5b3e8f71ee36c0b56b7865969055
 Filename: pool/main/r/ros-noetic-roscpp-traits/ros-noetic-roscpp-traits_0.7.3-0bookworm_armhf.deb
 
 Package: ros-noetic-roscpp-tutorials-dbgsym
@@ -1678,10 +1697,10 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/roscpp_tutorials
 Description: This package attempts to show the features of ROS step-by-step, including using messages, servers, parameters, etc.
 Size: 105644
+SHA256: d13bbd948012adabc8a06fa24c69ffeea2ea017a4fd0fdc692c7c8351a581cd8
 SHA1: e2f131642ef56ba6f740f6f7c8f13ba5949175df
 MD5sum: ea0dc9602a1b975b6e2ab9c91bbfdc9c
 SHA512: 695dfb4571e1494e9360e06b642dcb1d841ee16f4d97a3de84b818d28e7f8c9c97ce111ac1b23aa6aa34ce12635b0b05124cad82163e40da1b508f0f8ee754c8
-SHA256: d13bbd948012adabc8a06fa24c69ffeea2ea017a4fd0fdc692c7c8351a581cd8
 Filename: pool/main/r/ros-noetic-roscpp-tutorials/ros-noetic-roscpp-tutorials_0.10.2-0bookworm_armhf.deb
 
 Package: ros-noetic-roscpp
@@ -1696,10 +1715,10 @@ Homepage: http://ros.org/wiki/roscpp
 Description: roscpp is a C++ implementation of ROS.
  It provides a client library that enables C++ programmers to quickly interface with ROS Topics, Services, and Parameters. roscpp is the most widely used ROS client library and is designed to be the high-performance library for ROS.
 Size: 420988
-SHA512: 957d36defb0e04305eda06837dac4ae8375cf81ac0aace7fd01765591d1fba655809222ebef577198fddbc46a882fad2747deedd59b537206832f8c1c4df1141
-SHA256: e20331ef164d25e9a3658ef2cb4334bd235f568b5f899af8dcd8ab15acb85188
 SHA1: 3c240b592d600e5def861a97ddd13f757e3344f0
 MD5sum: f4e5caed4cc2d435b9dc1d023303c2cb
+SHA512: 957d36defb0e04305eda06837dac4ae8375cf81ac0aace7fd01765591d1fba655809222ebef577198fddbc46a882fad2747deedd59b537206832f8c1c4df1141
+SHA256: e20331ef164d25e9a3658ef2cb4334bd235f568b5f899af8dcd8ab15acb85188
 Filename: pool/main/r/ros-noetic-roscpp/ros-noetic-roscpp_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-roscreate
@@ -1714,10 +1733,10 @@ Homepage: http://wiki.ros.org/roscreate
 Description: roscreate contains a tool that assists in the creation of ROS filesystem resources.
  It provides: roscreate-pkg, which creates a new package directory, including the appropriate build and manifest files.
 Size: 14392
+MD5sum: 75ee6fc356aa736a4ac89c2c743ef864
 SHA512: ab6d4ac76a1a8b6a1fb42da50b824817c34a5243cda160320c3168eec3803cb5cca6def644a1fe2d73273debf30d728448c1979efcf9fd19b8e7f521b7cf0b85
 SHA256: 15997ceeed34868b2fee9ed1d3f88561f931ab9bcab5fa23af7474ddeb8eff88
 SHA1: b4e2b57a075dab185a1567e2657dd3c93af02c7e
-MD5sum: 75ee6fc356aa736a4ac89c2c743ef864
 Filename: pool/main/r/ros-noetic-roscreate/ros-noetic-roscreate_1.15.8-0bookworm_armhf.deb
 
 Package: ros-noetic-rosgraph-msgs
@@ -1732,10 +1751,10 @@ Homepage: http://ros.org/wiki/rosgraph_msgs
 Description: Messages relating to the ROS Computation Graph.
  These are generally considered to be low-level messages that end users do not interact with.
 Size: 6488
-SHA256: 141f26304f630c5f8bb44ee40b7bb149ea8d37fdf7c468f4e3f424cada13f02d
 SHA1: 71824821fc6c82a8ad436aa0058397954c412d6a
 MD5sum: 503ef45c348157de72d7d1c8d3fd17db
 SHA512: 714b02c93ed52009d77c3e60223260541ce2d72fee0b43bcda42ad888524c4d024e54eee419be9b000ab38bac56c04fa2a443a3c13d21fd356201eac28d4e4bd
+SHA256: 141f26304f630c5f8bb44ee40b7bb149ea8d37fdf7c468f4e3f424cada13f02d
 Filename: pool/main/r/ros-noetic-rosgraph-msgs/ros-noetic-rosgraph-msgs_1.11.3-0bookworm_armhf.deb
 
 Package: ros-noetic-rosgraph
@@ -1750,10 +1769,10 @@ Homepage: http://wiki.ros.org/rosgraph
 Description: rosgraph contains the rosgraph command-line tool, which prints information about the ROS Computation Graph.
  It also provides an internal library that can be used by graphical tools.
 Size: 63836
-MD5sum: 8034ec5d190c51f5e3475006119f1406
 SHA512: fce1546a15dd6720b73474a157f654ca7c144360b4a0a57a9e1b8149d115c522454feb9f45ec0dc781d3c163cb6922f8dcc36014305554396b277c430a632d03
 SHA256: 10693624efab1afa3548ed6fa10acf93daa56c3fd95f9c97ee29048dd6773883
 SHA1: b50186bca39eb6792ca83e2b8f9b56d786a2f335
+MD5sum: 8034ec5d190c51f5e3475006119f1406
 Filename: pool/main/r/ros-noetic-rosgraph/ros-noetic-rosgraph_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-roslang
@@ -1768,10 +1787,10 @@ Homepage: http://ros.org/wiki/roslang
 Description: roslang is a common package that all ROS client libraries depend on.
  This is mainly used to find client libraries (via 'rospack depends-on1 roslang').
 Size: 6476
+SHA256: 8018ac390d69505a9a75ff96d8b4f9bae738c329f8c9bf693d3bfac963712253
 SHA1: 01f9228a01a7d3b453863c8dc699be434fefceea
 MD5sum: a79a316cb376d008a28e7054148d0523
 SHA512: 0ef0eee62c2eb5a1fa9b6b7cfebe52a38df0f9ee4c4b3a5dc1b8d322f1db3b3c2f9a44cad0270deb8207eb29bf88d2f13ee7fcdd379c74bee96627b1a3c1208f
-SHA256: 8018ac390d69505a9a75ff96d8b4f9bae738c329f8c9bf693d3bfac963712253
 Filename: pool/main/r/ros-noetic-roslang/ros-noetic-roslang_1.15.8-0bookworm_armhf.deb
 
 Package: ros-noetic-roslaunch
@@ -1823,10 +1842,10 @@ Homepage: http://wiki.ros.org/roslib
 Description: Base dependencies and support libraries for ROS.
  roslib contains many of the common data structures and tools that are shared across ROS client library implementations.
 Size: 111068
-MD5sum: 9b2d43a7467fcd56489e2f06eaac121e
 SHA512: 4eecf0eafaadfb80d9f0903f4fcfb3d6483a0062d9b849f3c0b1631c84e467f712c4570843088094c1975f59a4540e44408262a905c8239e7a120c3408fc6aea
 SHA256: 7807f497c4fd1cc4d2eb98bc119722b1eefb9f77a2c18e579bcfd5af04c66573
 SHA1: e4f2c76fa61d990a9dc2e232339ebbc3b335a71a
+MD5sum: 9b2d43a7467fcd56489e2f06eaac121e
 Filename: pool/main/r/ros-noetic-roslib/ros-noetic-roslib_1.15.8-0bookworm_armhf.deb
 
 Package: ros-noetic-roslint
@@ -1857,10 +1876,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/roslisp
 Description: Lisp client library for ROS, the Robot Operating System.
 Size: 99288
+MD5sum: d7eb3158f14e9d7b339b677344af7008
 SHA512: 7e62967d5832917530501d9b46d711232084d4bff6c5fa8b87e93f6448a903af5dc1586cdfe5a04a5058d3a534c88ba88028128ccb6983e98ad9805361069140
 SHA256: e0d243cf0c6184dda22eae828c9f8c46164357fd9419ff43829178d00f082cfa
 SHA1: 6f52d421696e958a6b9b27ac2b6c888380da77a8
-MD5sum: d7eb3158f14e9d7b339b677344af7008
 Filename: pool/main/r/ros-noetic-roslisp/ros-noetic-roslisp_1.9.25-0bookworm_armhf.deb
 
 Package: ros-noetic-roslz4-dbgsym
@@ -1876,10 +1895,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-roslz4
 Build-Ids: 3641f5fb80c6d4bd5a742149b92f86f4efeef916 3bb6246938cfc14e9982f77a1361ec77782ea4c2
 Size: 27772
+SHA256: 2ce02c4b641b23b8ec825cb541cbce24b46d56dee4b0693396c67888f18281f5
 SHA1: 6a29dc2f24b4853fc16e24b4c4594ea1cc2aceb6
 MD5sum: cacab9d3f932daa697c4a89ef4957663
 SHA512: 00469ddaf4346cd27facdae72350488f14040d170c40ae3ad26ebeaf36f2a7b9484b6cc043466db1e9f5eb2e23a30c3dd734fc80f978fcd00d79b996559135e4
-SHA256: 2ce02c4b641b23b8ec825cb541cbce24b46d56dee4b0693396c67888f18281f5
 Filename: pool/main/r/ros-noetic-roslz4-dbgsym/ros-noetic-roslz4-dbgsym_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-roslz4
@@ -1893,10 +1912,10 @@ Priority: optional
 Description: A Python and C++ implementation of the LZ4 streaming format.
  Large data streams are split into blocks which are compressed using the very fast LZ4 compression algorithm.
 Size: 16244
-SHA1: f83a6cab02686d3356eb33d0b843701b15aff11c
 MD5sum: 89a3a1911c3364f11a95ef89d606a9d3
 SHA512: f4a4a8187a7b1d3374bac5b87327caf67b65ef558608d074efbd8caea6755f4ed5f57028ab6387b42f1940b3769e0cc4276b673a4bdebae8b1ee0a60dbbb176e
 SHA256: 0c43b81ab7d8697c8592faff146f97dd083b56f0a5b353a8d2fe082d926dd307
+SHA1: f83a6cab02686d3356eb33d0b843701b15aff11c
 Filename: pool/main/r/ros-noetic-roslz4/ros-noetic-roslz4_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rosmake
@@ -1910,10 +1929,10 @@ Priority: optional
 Homepage: http://wiki.ros.org/rosmake
 Description: rosmake is a ros dependency aware build tool which can be used to build all dependencies in the correct order.
 Size: 45244
-SHA1: 43f56785967ebf0bac138b3ccbc75ec5ce9959ec
-MD5sum: f78dc633e5129a10865830f55b314a35
 SHA512: ae602d914173112448ee72b9754449d63b22d26611130b70f8ccd6fef6316aa162998c66ac1c0b3d6b62a6f88b7f1dcbb42f6b428e6fb6ff8d4092019f684877
 SHA256: 7b4eb2af506982865af438bc35c977bf309224e6256ee203d1d6f33674223e28
+SHA1: 43f56785967ebf0bac138b3ccbc75ec5ce9959ec
+MD5sum: f78dc633e5129a10865830f55b314a35
 Filename: pool/main/r/ros-noetic-rosmake/ros-noetic-rosmake_1.15.8-0bookworm_armhf.deb
 
 Package: ros-noetic-rosmaster
@@ -1945,10 +1964,10 @@ Homepage: http://wiki.ros.org/rosmsg
 Description: rosmsg contains two command-line tools: rosmsg and rossrv.
  rosmsg is a command-line tool for displaying information about ROS Message types. rossrv is a command-line tool for displaying information about ROS Service types.
 Size: 29492
+SHA512: 64ae57a94394c2e3e1f270985c49d2ad21053c4ea909a5604eb724889fd58ffe9105f98607ccf6a5659b56e835f1e3baa182688873de834d503a79baea58d512
 SHA256: 3839b3d14162f3a164636cfb6bc838123df82a47dad93caa699fd02db7169e99
 SHA1: b8aac69a5d88fe8af61e1d2cb0c14ce772b3463f
 MD5sum: 5aa11ec794e561ac237c3ec103993567
-SHA512: 64ae57a94394c2e3e1f270985c49d2ad21053c4ea909a5604eb724889fd58ffe9105f98607ccf6a5659b56e835f1e3baa182688873de834d503a79baea58d512
 Filename: pool/main/r/ros-noetic-rosmsg/ros-noetic-rosmsg_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rosnode
@@ -1982,10 +2001,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-rosout
 Build-Ids: b984abc3c1d5fd94458f8f1899f0de315c1ecb43
 Size: 350588
-SHA512: 1fdcd08e2368e0ca0a52f85fbb8e4fb1b8d02bb34d2443bb15e1a8f5a6ece68cbfd05601510bebd10806f6713136f397ec5b307620dbe7f8aa1dd291ea46fc70
-SHA256: c66bd397b2ff3e22c787733c64c4095166b2eff445f4f1ae547cbae5dc8bd169
 SHA1: a315e95d38291d45e688e1e932ee69ed236779e7
 MD5sum: c6856d5d75b76e473f0f62140bc14fe1
+SHA512: 1fdcd08e2368e0ca0a52f85fbb8e4fb1b8d02bb34d2443bb15e1a8f5a6ece68cbfd05601510bebd10806f6713136f397ec5b307620dbe7f8aa1dd291ea46fc70
+SHA256: c66bd397b2ff3e22c787733c64c4095166b2eff445f4f1ae547cbae5dc8bd169
 Filename: pool/main/r/ros-noetic-rosout-dbgsym/ros-noetic-rosout-dbgsym_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rosout
@@ -1999,10 +2018,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/rosout
 Description: System-wide logging mechanism for messages sent to the /rosout topic.
 Size: 28064
-SHA1: f084e333f3eadb9872092f698687dc4f7845d6f3
-MD5sum: 5b5f40d54895a8ec749ee7b91c31ced5
 SHA512: 05a8e56e4a0dde37d9e28257e02a45773cf34a17b61c58022df53accf039dc85f46b65db255333c77e82971cf45569977b94f9ca6c500ea10f2d695e1389b6ff
 SHA256: 7e0b00808bac0b4aaee2e2efdfcce93eed925504eb2a9457b583fdfc66da7e98
+SHA1: f084e333f3eadb9872092f698687dc4f7845d6f3
+MD5sum: 5b5f40d54895a8ec749ee7b91c31ced5
 Filename: pool/main/r/ros-noetic-rosout/ros-noetic-rosout_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rospack-dbgsym
@@ -2035,10 +2054,10 @@ Priority: optional
 Homepage: http://wiki.ros.org/rospack
 Description: ROS Package Tool
 Size: 82148
+SHA512: 6eb377a97da897ecf0721f0e8146aae8efe559e4d2711f544d197c594d0560a84a3105a87b5ede3c54ec48548748d280c75ede8e3b43c423c4a6c3a76cc41e63
 SHA256: ebcdfcb93403a633658a650211254d08618dd8a6b46917c6509cc034a4a5ea66
 SHA1: 4b69251de8ef0c3ea1db625baa61096ee63e18f4
 MD5sum: 7d91201daf3437246838078fb07bf6b5
-SHA512: 6eb377a97da897ecf0721f0e8146aae8efe559e4d2711f544d197c594d0560a84a3105a87b5ede3c54ec48548748d280c75ede8e3b43c423c4a6c3a76cc41e63
 Filename: pool/main/r/ros-noetic-rospack/ros-noetic-rospack_2.6.2-0bookworm_armhf.deb
 
 Package: ros-noetic-rosparam
@@ -2053,10 +2072,10 @@ Homepage: http://wiki.ros.org/rosparam
 Description: rosparam contains the rosparam command-line tool for getting and setting ROS Parameters on the Parameter Server using YAML-encoded files.
  It also contains an experimental library for using YAML with the Parameter Server. This library is intended for internal use only. rosparam can be invoked within a roslaunch file.
 Size: 22644
+MD5sum: f228dcfd8ac7dd5a2ed6997bb011d9fb
 SHA512: fd7e6dea38a8000d9327b3c8973521263546f34046ca085471f0ce8a26b0280e33c9c7fba0a2953903bbb99a54c8d0be53d93e72e494fb458dec1b75cbd3d946
 SHA256: e0630dbbceed8b13d6a7e8a9c837f40137becf2ac73979bbd394a832dbb0eec8
 SHA1: efb70c52631494175ddefe37367ace0dd22f7512
-MD5sum: f228dcfd8ac7dd5a2ed6997bb011d9fb
 Filename: pool/main/r/ros-noetic-rosparam/ros-noetic-rosparam_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rospy-tutorials
@@ -2089,10 +2108,10 @@ Homepage: http://wiki.ros.org/rospy
 Description: rospy is a pure Python client library for ROS.
  The rospy client API enables Python programmers to quickly interface with ROS Topics, Services, and Parameters. The design of rospy favors implementation speed (i.e. developer time) over runtime performance so that algorithms can be quickly prototyped and tested within ROS. It is also ideal for non-critical-path code, such as configuration and initialization code. Many of the ROS tools are written in rospy to take advantage of the type introspection capabilities. Many of the ROS tools, such as rostopic and rosservice, are built on top of rospy.
 Size: 180596
+SHA256: 12cdb094160c83290eb5d7df09e95f8a2b414ac85a413aff982133bc16f018c0
 SHA1: ef19369d52f4d5aaf09f0e35b1e82956f91bbc5a
 MD5sum: 890497fda11decc2e8f24f1f35488fea
 SHA512: d78d362fc7bf491aebd99990cd2b225136880e841df7f646b5b8b1457b0923718907ef011f0c5671db08d77d133a7cabffde209c2f60b1930a497797ba98d415
-SHA256: 12cdb094160c83290eb5d7df09e95f8a2b414ac85a413aff982133bc16f018c0
 Filename: pool/main/r/ros-noetic-rospy/ros-noetic-rospy_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rosservice
@@ -2107,10 +2126,10 @@ Homepage: http://ros.org/wiki/rosservice
 Description: rosservice contains the rosservice command-line tool for listing and querying ROS Services.
  It also contains a Python library for retrieving information about Services and dynamically invoking them. The Python library is experimental and is for internal-use only.
 Size: 24612
-SHA512: 2395208b0721a4d2e1586983f48ab7f70c6c1810b19b7776038104cb3db4b90e799ec96ac0cd10ebe6fb7f79e806837f961ee5b2bb45bc6cea00ed23147ed126
 SHA256: 1a20c23f3ac73ddb242ee6f2554c9866fddc8e270afa6efdaebf91b38363ee44
 SHA1: 55f993733323f3cdb0aa7df813727e9f5e7658f0
 MD5sum: f788bc62bc842cf52e712531abafa0fe
+SHA512: 2395208b0721a4d2e1586983f48ab7f70c6c1810b19b7776038104cb3db4b90e799ec96ac0cd10ebe6fb7f79e806837f961ee5b2bb45bc6cea00ed23147ed126
 Filename: pool/main/r/ros-noetic-rosservice/ros-noetic-rosservice_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rostest
@@ -2124,10 +2143,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/rostest
 Description: Integration test suite based on roslaunch that is compatible with xUnit frameworks.
 Size: 38008
+SHA256: ef66dfe2cd3adf1e33ea79af90c88ebdbd926cf17c63a20fa81b285872660093
 SHA1: 7f4150b145dac07c721d45536e3366b3557d3146
 MD5sum: d13ee657556156cc2ab28209f4c5ed75
 SHA512: 511c7c4f44b89538f73db880ff98f200843714b6b2e9743c979847c75fdf9e0f6fc261f03090061e1633bfbcb2862d0393807ac28a76615bd685c5eeed0aae3e
-SHA256: ef66dfe2cd3adf1e33ea79af90c88ebdbd926cf17c63a20fa81b285872660093
 Filename: pool/main/r/ros-noetic-rostest/ros-noetic-rostest_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rostime-dbgsym
@@ -2160,10 +2179,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/rostime
 Description: Time and Duration implementations for C++ libraries, including roscpp.
 Size: 34912
-SHA512: d20607231f5aad61addd3821a89c46b44bbf2c74fbd5ed3d6e84e32bc24e9f722a311f495b82f27858298a2447f8fbdfcf3313b350820f863453c824b320faa3
-SHA256: 1f62d83fac9eb045fb0ad77e2c14087b4e420274529bad6737b8d35fd15be3a9
 SHA1: 8735cfc63f801fbea2f7737cbff9464695b0fce4
 MD5sum: 24cfacf6b7e71c711f06c635e031c2bb
+SHA512: d20607231f5aad61addd3821a89c46b44bbf2c74fbd5ed3d6e84e32bc24e9f722a311f495b82f27858298a2447f8fbdfcf3313b350820f863453c824b320faa3
+SHA256: 1f62d83fac9eb045fb0ad77e2c14087b4e420274529bad6737b8d35fd15be3a9
 Filename: pool/main/r/ros-noetic-rostime/ros-noetic-rostime_0.7.3-0bookworm_armhf.deb
 
 Package: ros-noetic-rostopic
@@ -2178,10 +2197,10 @@ Homepage: http://ros.org/wiki/rostopic
 Description: rostopic contains the rostopic command-line tool for displaying debug information about ROS Topics, including publishers, subscribers, publishing rate, and ROS Messages.
  It also contains an experimental Python library for getting information about and interacting with topics dynamically. This library is for internal-use only as the code API may change, though it does provide examples of how to implement dynamic subscription and publication behaviors in ROS.
 Size: 62740
-SHA1: 63e0baffd91cbee758e58958c6f84291b0f53932
 MD5sum: a2aabeadc45b1179b5c0161e62bc4448
 SHA512: 93bed30fc4ff0abd1f7c7269820b875b2fef8c4f08e6457e806c1a14f79d8d3e0a99925b3d4ca91b79934c3422a91b5b621951d67c8b65a62ea5f3b5b7b5f1cf
 SHA256: 23af3076d18fc37bafd4fa6529108a3ef9726f670be9c92ab2f81e3b587a63f5
+SHA1: 63e0baffd91cbee758e58958c6f84291b0f53932
 Filename: pool/main/r/ros-noetic-rostopic/ros-noetic-rostopic_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-rosunit
@@ -2196,10 +2215,10 @@ Homepage: http://wiki.ros.org/rosunit
 Description: Unit-testing package for ROS.
  This is a lower-level library for rostest and handles unit tests, whereas rostest handles integration tests.
 Size: 63580
-SHA256: 14e92c0b495c2401b802c22607daa635fc03529b2f064f25c122dc71928e3246
-SHA1: 8a44183c044e5f3270b8ac387ce8f34ccded6b4e
 MD5sum: ec0d6d76cc0ac91d10c03c1bd12b9341
 SHA512: 6e42d277460e30e6335208d103030631b814ae58f6c94a12974f8f3b78f8a11b01cd9f567dea2cd36047f53aab5cfd448f483b9f462c984721a17d63a26dc32f
+SHA256: 14e92c0b495c2401b802c22607daa635fc03529b2f064f25c122dc71928e3246
+SHA1: 8a44183c044e5f3270b8ac387ce8f34ccded6b4e
 Filename: pool/main/r/ros-noetic-rosunit/ros-noetic-rosunit_1.15.8-0bookworm_armhf.deb
 
 Package: ros-noetic-roswtf
@@ -2231,10 +2250,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/sensor_msgs
 Description: This package defines messages for commonly used sensors, including cameras and scanning laser rangefinders.
 Size: 39868
-SHA256: 05301f0082336d1bc59384b81c60077055b15d7286430ec3a498176210e456e0
 SHA1: 82285e225e5c9db8f4012f33b31af943c7a3da72
 MD5sum: 57e3462754f3a5ab5561afe4c36e1f80
 SHA512: 340f6e525fe8029999e9b5c260408a2466fbd465a0f1b74bc66927bf2a7ebd32c6a7cfaf0ec88e7d4fe55ab7ae215b28476eebbd369e6eee79e4d448135d3395
+SHA256: 05301f0082336d1bc59384b81c60077055b15d7286430ec3a498176210e456e0
 Filename: pool/main/r/ros-noetic-sensor-msgs/ros-noetic-sensor-msgs_1.13.1-0bookworm_armhf.deb
 
 Package: ros-noetic-shape-msgs
@@ -2248,10 +2267,10 @@ Priority: optional
 Homepage: http://wiki.ros.org/shape_msgs
 Description: This package contains messages for defining shapes, such as simple solid object primitives (cube, sphere, etc), planes, and meshes.
 Size: 7504
-SHA512: aa5534f357419cdd7e3bd48edc88410358be1c9da8bcf56eb8be7c5f3ba09e3d35ffb15582bc57347ab5a066e67667be2a0f842f5f46327f928ff50b8ba9636b
 SHA256: a2ed7b4f99d7aea9cc06acf43104e46b817d886c2b2bec80bc86c78b2b7e8f32
 SHA1: fc612aab3e8d5302b7133703306baca463c8b901
 MD5sum: 455ff28757d4ba5aeecdb7451d8c4293
+SHA512: aa5534f357419cdd7e3bd48edc88410358be1c9da8bcf56eb8be7c5f3ba09e3d35ffb15582bc57347ab5a066e67667be2a0f842f5f46327f928ff50b8ba9636b
 Filename: pool/main/r/ros-noetic-shape-msgs/ros-noetic-shape-msgs_1.13.1-0bookworm_armhf.deb
 
 Package: ros-noetic-smclib
@@ -2300,10 +2319,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/std_srvs
 Description: Common service definitions.
 Size: 5888
-MD5sum: 32a8624e05fe6c2d537a4d30fbb42803
 SHA512: 396155efbbbc9c019cad47983158fab93450fc60d43c404139cf36078a8476a803a4b765bb5d6de89d281a23821c9db8bffb813831a5b6bdcccd089abfdc2316
 SHA256: 06ef3c4d8e50af3baffc319e22ceb8dadcc4ee478813c52b56d4dde55f5ad0f6
 SHA1: 7b7359a0e7a30cedf6e14d9ae8f4df175814e578
+MD5sum: 32a8624e05fe6c2d537a4d30fbb42803
 Filename: pool/main/r/ros-noetic-std-srvs/ros-noetic-std-srvs_1.11.3-0bookworm_armhf.deb
 
 Package: ros-noetic-stereo-msgs
@@ -2317,10 +2336,10 @@ Priority: optional
 Homepage: http://wiki.ros.org/stereo_msgs
 Description: stereo_msgs contains messages specific to stereo processing, such as disparity images.
 Size: 7252
-SHA512: 438deaa69870a61a0f4d191f4f5c3c8e19e256d2786622c1056165a7e0ed4b3ff7df5dbfa746798340a55ca964063de1490524fa5cd1e3f1621fc4cab5c87e4d
-SHA256: c226f20cba2001af2a60809d2f578ac5df8930cda1eecd9ef05a01d9defef9f1
 SHA1: 418b957a722e99ca8bc74920593cb8700ed5deb2
 MD5sum: de085ce339f949657c4c5de5d8dfc664
+SHA512: 438deaa69870a61a0f4d191f4f5c3c8e19e256d2786622c1056165a7e0ed4b3ff7df5dbfa746798340a55ca964063de1490524fa5cd1e3f1621fc4cab5c87e4d
+SHA256: c226f20cba2001af2a60809d2f578ac5df8930cda1eecd9ef05a01d9defef9f1
 Filename: pool/main/r/ros-noetic-stereo-msgs/ros-noetic-stereo-msgs_1.13.1-0bookworm_armhf.deb
 
 Package: ros-noetic-tf-dbgsym
@@ -2371,10 +2390,10 @@ Section: misc
 Priority: optional
 Description: tf2_eigen
 Size: 10364
-SHA256: 9ffcc841af4f7cc15c053555ca1da19a3a229c8f53ecbdffdd1578e734314c33
-SHA1: b30f7a68a759fa6fd61089d416194cf259e4cb97
 MD5sum: efb823c5648bd51720d0078c7f2abad1
 SHA512: 3f3eb39e7a6b7c05f070d953a4eae1b15e5137dbe11e4b9cf1fab41e79aaa7c1170642d7ed7f2f4e7ddea5b4a472e2309ccfe09905c1d604786bf1d508a9caad
+SHA256: 9ffcc841af4f7cc15c053555ca1da19a3a229c8f53ecbdffdd1578e734314c33
+SHA1: b30f7a68a759fa6fd61089d416194cf259e4cb97
 Filename: pool/main/r/ros-noetic-tf2-eigen/ros-noetic-tf2-eigen_0.7.7-0bookworm_armhf.deb
 
 Package: ros-noetic-tf2-geometry-msgs
@@ -2405,10 +2424,10 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/tf2_msgs
 Description: tf2_msgs
 Size: 7360
+SHA512: 662a48dc631e1490d5e9a8b11c1195c697a9f66aa5bcc3a0cb944a9426c8404782ef81fed637187a7e2a7c82d10ab0c3090d7addd4e5742822a114b3d6cf9134
 SHA256: 7b883c92d9e51d16415a7834b23325c466e1fd0146bee5d29ffe1843f622c65f
 SHA1: b300389263c09fefea3ede0734002b5577fb3879
 MD5sum: 01f6ea8a375c2dbf3f41be77cd0a479d
-SHA512: 662a48dc631e1490d5e9a8b11c1195c697a9f66aa5bcc3a0cb944a9426c8404782ef81fed637187a7e2a7c82d10ab0c3090d7addd4e5742822a114b3d6cf9134
 Filename: pool/main/r/ros-noetic-tf2-msgs/ros-noetic-tf2-msgs_0.7.7-0bookworm_armhf.deb
 
 Package: ros-noetic-tf2-py-dbgsym
@@ -2424,10 +2443,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-tf2-py
 Build-Ids: 0bff3e4ab5c4803e8c3adf167f83512a4444bdfa
 Size: 180768
-SHA1: fff2bfd9056fde18527587af6b5095b3571b121a
-MD5sum: f7d8f82a238bc61f1a3754b73972fa28
 SHA512: acbc6dc2d3ea0f7f281b26857f136c50ee8bf04ca636c29dc92b1676d0e87e765418b99b0225ee9effdeff9d616c4dd74956fc8f809ee3e6f5bcc7255a7f5aad
 SHA256: cf3078a2983f96c627047929831e96172ce5710cd1d079161a9c812c51f48fcd
+SHA1: fff2bfd9056fde18527587af6b5095b3571b121a
+MD5sum: f7d8f82a238bc61f1a3754b73972fa28
 Filename: pool/main/r/ros-noetic-tf2-py-dbgsym/ros-noetic-tf2-py-dbgsym_0.7.7-0bookworm_armhf.deb
 
 Package: ros-noetic-tf2-py
@@ -2460,10 +2479,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-tf2-ros
 Build-Ids: 5e28bcfdb25a4e697cb295abc9c337b9c6f22746 5e9fa2c25c0a002315ec03aea2c07f71d725aa2d 80f9b521ec18bfe76723b797bad5622db72dcf25
 Size: 3418400
-MD5sum: a7015a6b727637b0d50863526cd519b9
-SHA512: 006d9b7e131edc3ae61b4ddd2f04e4145e66af99160bd3d741b65444f893e359a9248415818550c034b01f25e9be4ccc97da484f7a7bf4c2c9212ee648793ab4
 SHA256: 6ff6f9467ed620b7ab1354792f0e39cad89909a54ddc33da97167f8dbbadf020
 SHA1: 024890b22eae8b2575cab7efc682865a9398ed85
+MD5sum: a7015a6b727637b0d50863526cd519b9
+SHA512: 006d9b7e131edc3ae61b4ddd2f04e4145e66af99160bd3d741b65444f893e359a9248415818550c034b01f25e9be4ccc97da484f7a7bf4c2c9212ee648793ab4
 Filename: pool/main/r/ros-noetic-tf2-ros-dbgsym/ros-noetic-tf2-ros-dbgsym_0.7.7-0bookworm_armhf.deb
 
 Package: ros-noetic-tf2-ros
@@ -2477,10 +2496,10 @@ Priority: optional
 Homepage: http://www.ros.org/wiki/tf2_ros
 Description: This package contains the ROS bindings for the tf2 library, for both Python and C++.
 Size: 198460
-SHA512: 89927c880f692f2bc5856cd34e8a41d1dca67023bd1a984eb128ba8dc535c57a3c56de0fad6b4f56996bf97248672130164596595a6ecb781b5e9fb749b881a9
-SHA256: c352fe4e08623a6b4f3636813c6a45eed03d1f8eb34e7442acf3e40bc3432ce9
 SHA1: ccd2184d17a969a249476e036cd9984922cca2e3
 MD5sum: fc1c2c2912ad164cba280c2a50d1979a
+SHA512: 89927c880f692f2bc5856cd34e8a41d1dca67023bd1a984eb128ba8dc535c57a3c56de0fad6b4f56996bf97248672130164596595a6ecb781b5e9fb749b881a9
+SHA256: c352fe4e08623a6b4f3636813c6a45eed03d1f8eb34e7442acf3e40bc3432ce9
 Filename: pool/main/r/ros-noetic-tf2-ros/ros-noetic-tf2-ros_0.7.7-0bookworm_armhf.deb
 
 Package: ros-noetic-tf2-web-republisher-dbgsym
@@ -2496,10 +2515,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-tf2-web-republisher
 Build-Ids: 638ff3a2687a779ec1c4613f167c4c469d7ce47c
 Size: 1000604
-SHA1: 00904e5ea936afb4be18092007572d169e242800
-MD5sum: f48c3fddd0f02ab81d1090e8b833a762
 SHA512: fcf8b73ab3c8b4096e8d3c8a79cffe6010811bc49d2876418aec7d67f31816223b88347cbcdf3ec1ffe03ec636866d6f6edc4d7c1f9e6a7c48c002723f4ce6bc
 SHA256: 6c2a8628eeef895d5fa935b5e5fa420cd7852d7f24ea55000f672d1cffd777c8
+SHA1: 00904e5ea936afb4be18092007572d169e242800
+MD5sum: f48c3fddd0f02ab81d1090e8b833a762
 Filename: pool/main/r/ros-noetic-tf2-web-republisher-dbgsym/ros-noetic-tf2-web-republisher-dbgsym_0.3.2-0bookworm_armhf.deb
 
 Package: ros-noetic-tf2-web-republisher
@@ -2513,10 +2532,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/tf2_web_republisher
 Description: Republishing of Selected TFs
 Size: 74104
-SHA512: 79984f0256964ac06b614a5f114e81c06434315062b1eb819aa86f6c49f58dcc152176e0ba73817d6f61ee821d6a781575c371e645c4931ab6367bbb358f1dda
 SHA256: 1e96ca931ed6f6c23d661efcc5038e806feaab46fff658d25a1060cd33bcb92a
 SHA1: c3da759359768b8c68a905d30262c8b978803b3f
 MD5sum: cfe97de83bc215629c752590b26b5e50
+SHA512: 79984f0256964ac06b614a5f114e81c06434315062b1eb819aa86f6c49f58dcc152176e0ba73817d6f61ee821d6a781575c371e645c4931ab6367bbb358f1dda
 Filename: pool/main/r/ros-noetic-tf2-web-republisher/ros-noetic-tf2-web-republisher_0.3.2-0bookworm_armhf.deb
 
 Package: ros-noetic-tf2
@@ -2568,10 +2587,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-topic-tools
 Build-Ids: 22ac76afd63b18dd4b26b8d7b4689fcac7fe5924 33591c436a4c5c10caf6d3d78464e3fc42f321fe 726cd3559d3ca81c8994c328f9de52d13a62b4f7 7a382fc5b83935ac7a309042fb05e942be20ad15 834546d244e1a1fd9655c6b9a1d53fe8f13ac089 86e987af9151286a93fa7e01eefad8aa02ab633b e9ddd6a3ec605e94a1ebf455f4c03720284654cf
 Size: 2438180
-SHA1: 4630124517b134125f8a3b194ebf417a589df565
 MD5sum: 7f3955f3c8a174963e1d882cb6b62980
 SHA512: 2988f4a1da5ed8b54a70157e4844315b087c959ff613b1252e0911d2b9e282774fd38fe1ceed368cb05401cc9b4bc89362ad68ed366fcfef282ede117ea6c949
 SHA256: 394b911f0b7e1b4a8eba67d5f393470c3c0e5dee2ed003be91d5f71664acc1c7
+SHA1: 4630124517b134125f8a3b194ebf417a589df565
 Filename: pool/main/r/ros-noetic-topic-tools-dbgsym/ros-noetic-topic-tools-dbgsym_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-topic-tools
@@ -2586,10 +2605,10 @@ Homepage: http://ros.org/wiki/topic_tools
 Description: Tools for directing, throttling, selecting, and otherwise messing with ROS topics at a meta level.
  None of the programs in this package actually know about the topics whose streams they are altering; instead, these tools deal with messages as generic binary blobs. This means they can be applied to any ROS topic.
 Size: 107812
-SHA1: d125eb37517a9beb7d5802b57e8d67230b9f4d77
-MD5sum: 4c39d29621bdc77b937e696852dcc577
 SHA512: 0e529e070fe24b89fedca6a55806d1db35130eae38a670029192f53aaab525eea5c670ef1105777de2605f8ecd48d23efa47c70874c9ad1e5b5e92ed1d47b55c
 SHA256: db3826c3ac23e3654a6a234dce5258fdaafd10ac0de7e97343bc2837724d0ded
+SHA1: d125eb37517a9beb7d5802b57e8d67230b9f4d77
+MD5sum: 4c39d29621bdc77b937e696852dcc577
 Filename: pool/main/r/ros-noetic-topic-tools/ros-noetic-topic-tools_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-trajectory-msgs
@@ -2604,10 +2623,10 @@ Homepage: http://wiki.ros.org/trajectory_msgs
 Description: This package defines messages for defining robot trajectories.
  These messages are also the building blocks of most of the control_msgs actions.
 Size: 7872
-SHA512: 3dd8aa13441703d2c0669c76c4f51e9eaf92f21f652286d2622cbd4d808dc76896df1437078364aa5378b74ad21299d98355f1f4f7980afa1cb857e9b7631779
 SHA256: f67c27266d045ee2299dc86fcff51c66128bcc36327f5181aa863c08b585bade
 SHA1: 4c63c97e64b04b96470d83948246b8954687ea47
 MD5sum: 2ea7c141c2484c4a7be48900dce64aa8
+SHA512: 3dd8aa13441703d2c0669c76c4f51e9eaf92f21f652286d2622cbd4d808dc76896df1437078364aa5378b74ad21299d98355f1f4f7980afa1cb857e9b7631779
 Filename: pool/main/r/ros-noetic-trajectory-msgs/ros-noetic-trajectory-msgs_1.13.1-0bookworm_armhf.deb
 
 Package: ros-noetic-urdf-dbgsym
@@ -2623,10 +2642,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-urdf
 Build-Ids: fd482ac87159761bbf37039e08d57dae1691dd28
 Size: 804348
+SHA512: fff2f662e38880a1e3f50ffdd06020277b5a6eea335d0bdf049163035d8e3f2b68adc72432517b38c6764e09728df1f5282f95614553dd7da900a8bf735cc692
 SHA256: e7a2a3a15911cb45db8bcdc24e87d3ed3b81a3404143c699fe38403468731dde
 SHA1: ce9bb36d348faf8575be91c75f8d30abf37a3b99
 MD5sum: 7a6625999fd48a8a40873293be5273e0
-SHA512: fff2f662e38880a1e3f50ffdd06020277b5a6eea335d0bdf049163035d8e3f2b68adc72432517b38c6764e09728df1f5282f95614553dd7da900a8bf735cc692
 Filename: pool/main/r/ros-noetic-urdf-dbgsym/ros-noetic-urdf-dbgsym_1.13.2-0bookworm_armhf.deb
 
 Package: ros-noetic-urdf-parser-plugin
@@ -2640,10 +2659,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/urdf
 Description: This package contains a C++ base class for URDF parsers.
 Size: 6920
-SHA512: 871f85af4abe03f2be035a78e27e901842d8ee9e658ea7a8a9045e55e6d59baa05dff66f28ea30cdb3ab059ec8cec6d468eb93a584718bfac1bc8aba1e686bfe
-SHA256: e22828bf5ac33d7ad34482d0ab3e2aac35cf210d62d9d0ad957b17513e520f0f
 SHA1: 9a8cee704cdd12742606408484d2432e83db50df
 MD5sum: 24f5feda957ac1c69565fb5f8e23f76d
+SHA512: 871f85af4abe03f2be035a78e27e901842d8ee9e658ea7a8a9045e55e6d59baa05dff66f28ea30cdb3ab059ec8cec6d468eb93a584718bfac1bc8aba1e686bfe
+SHA256: e22828bf5ac33d7ad34482d0ab3e2aac35cf210d62d9d0ad957b17513e520f0f
 Filename: pool/main/r/ros-noetic-urdf-parser-plugin/ros-noetic-urdf-parser-plugin_1.13.2-0bookworm_armhf.deb
 
 Package: ros-noetic-urdf
@@ -2658,10 +2677,10 @@ Homepage: http://ros.org/wiki/urdf
 Description: This package contains a C++ parser for the Unified Robot Description Format (URDF), which is an XML format for representing a robot model.
  The code API of the parser has been through our review process and will remain backwards compatible in future releases.
 Size: 59256
-MD5sum: 33830d90858d5641a12352c8acfeeb20
 SHA512: d90561884d0545d20cf571c8493b11cadf39b84daeb0337809576a77b3d21ff80cc7b074dfd1e0ed4b9eb7f755ae03c750f3f5b85c6706b54d52feff28218336
 SHA256: 58e5e27074e2d03c33dd890029110cc0ad4bc20a47c723a7f5631432190fa11a
 SHA1: 5a737468d52930d2e909b577a721e19f3c8c47e0
+MD5sum: 33830d90858d5641a12352c8acfeeb20
 Filename: pool/main/r/ros-noetic-urdf/ros-noetic-urdf_1.13.2-0bookworm_armhf.deb
 
 Package: ros-noetic-uuid-msgs
@@ -2675,10 +2694,10 @@ Priority: optional
 Homepage: http://ros.org/wiki/uuid_msgs
 Description: ROS messages for universally unique identifiers.
 Size: 5580
+SHA512: e4c883d99c3fc9ddd7a6fc65c5004a8569368d812e28b6902c995509da093a11c44855ce85ce1233a2f27f588743978949eb80ba48d89592fb3f6ff11af6171f
 SHA256: 60e20759b51a856b4a423bce65d90a6f1263a6773e5faa32bed74aa588f97926
 SHA1: 178c3f10cb6afb533eff24fa4f4c0b7369854dfc
 MD5sum: 49cbcc5803880b2932e25127091927af
-SHA512: e4c883d99c3fc9ddd7a6fc65c5004a8569368d812e28b6902c995509da093a11c44855ce85ce1233a2f27f588743978949eb80ba48d89592fb3f6ff11af6171f
 Filename: pool/main/r/ros-noetic-uuid-msgs/ros-noetic-uuid-msgs_1.0.6-0bookworm_armhf.deb
 
 Package: ros-noetic-visualization-msgs
@@ -2712,10 +2731,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-vl53l1x
 Build-Ids: 06b043c65b3f963afc42eb832e55c9e1187b6470
 Size: 372304
+SHA512: 60f7787c610755f0a69cbb59ead71d98510cdae3527d6b781b71b57cc61aa4c19763193d04009dbad746de0e1f760cb1882786095cf998009ee2c14788c57927
 SHA256: f080e0870be8cd4e285d723b842018bb46f065522fe78f499f298081cdf0cb34
 SHA1: e68542cb07e40c3cc00ef5fb0dc5e348b8bad9ec
 MD5sum: bdecdc6c6ca43f905a9fb787d3eb09d6
-SHA512: 60f7787c610755f0a69cbb59ead71d98510cdae3527d6b781b71b57cc61aa4c19763193d04009dbad746de0e1f760cb1882786095cf998009ee2c14788c57927
 Filename: pool/main/r/ros-noetic-vl53l1x-dbgsym/ros-noetic-vl53l1x-dbgsym_1.0.0-0bookworm_armhf.deb
 
 Package: ros-noetic-vl53l1x
@@ -2728,10 +2747,10 @@ Section: misc
 Priority: optional
 Description: VL53L1X ToF rangefinder driver
 Size: 49808
+SHA1: 94ad723642cd8bc1e8cd08eed8da54e737877e1d
 MD5sum: a274a2d5266c2d1758dbf647512da3e1
 SHA512: d1be4e7c94cef76fe9cb31d629cd1b111c5b748ed3224041e056816cfe3ff0d93411650f47f2102b968d2bea8a130861363d98f07ffd80d49136c62735b631b9
 SHA256: 8fa21c00118264d20d2d3129476423b0b4ebeba1068601a926a8acb23379e1c1
-SHA1: 94ad723642cd8bc1e8cd08eed8da54e737877e1d
 Filename: pool/main/r/ros-noetic-vl53l1x/ros-noetic-vl53l1x_1.0.0-0bookworm_armhf.deb
 
 Package: ros-noetic-web-video-server-dbgsym
@@ -2747,10 +2766,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-web-video-server
 Build-Ids: 69b6a015b56edfe6a247f9c56139d663b613963a
 Size: 3186672
-SHA512: df46711dad3c31a6b6519dc6c7828821004d6fff0a333a71083590f29930c9b58658da9eb48b9cc8f8dcec8ecd33a284550643b5e61052461d993743233eef62
 SHA256: 61d709dac28618602c7dd54255510f7d3c336b3d0e45935c5fa5ef7e7cb79670
 SHA1: c96785dc6304146be8491c84c8f7a5d1aad4aa15
 MD5sum: 6ea138c426f71959aebaad67cdf49dc0
+SHA512: df46711dad3c31a6b6519dc6c7828821004d6fff0a333a71083590f29930c9b58658da9eb48b9cc8f8dcec8ecd33a284550643b5e61052461d993743233eef62
 Filename: pool/main/r/ros-noetic-web-video-server-dbgsym/ros-noetic-web-video-server-dbgsym_0.2.2-0bookworm_armhf.deb
 
 Package: ros-noetic-web-video-server
@@ -2783,10 +2802,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-ws281x
 Build-Ids: a9a5e021e921266c159c07e1b38c5009854d8594
 Size: 376108
+MD5sum: 7188d77309eb771a852b11e7e1a44926
 SHA512: 6cd2be9e92dcf460477518915179af13b9bf6e9fae55ddebe1941d60ba6f344f7c5f93d7c28392e042d4a0c1d49f38f2bd9f858f7c8b5a8acf3e3151c16d0568
 SHA256: 3a02e2994ed4c4ec9d090142a7ada14f60a7870fd4e5a8e3a30b3b19ff1d72e3
 SHA1: 3234a5b296c4ab6581995fa5d494cac78c0f1644
-MD5sum: 7188d77309eb771a852b11e7e1a44926
 Filename: pool/main/r/ros-noetic-ws281x-dbgsym/ros-noetic-ws281x-dbgsym_0.0.13-0bookworm_armhf.deb
 
 Package: ros-noetic-ws281x
@@ -2800,10 +2819,10 @@ Priority: optional
 Homepage: https://github.com/CopterExpress/ros_led
 Description: ROS node for rpi_ws281x LED strip driver
 Size: 41724
-SHA512: 2adfdd6f09b42c416d98ef9387ae65a32c74fcff2efea1cba6dd90c936dd014a2dfafe1a9a419feb53927eacee21cc00b9a0a7af8860e0e507ef27cd0157fc44
 SHA256: 6938d00f23102b034b02f506832dc3afe3099dfee13e1316f1fb79d916fc290f
 SHA1: 03630e2b8e78790f0a19a6f00b1736d5dfc55e69
 MD5sum: 12e23ff5959cf22ce7badc799b354406
+SHA512: 2adfdd6f09b42c416d98ef9387ae65a32c74fcff2efea1cba6dd90c936dd014a2dfafe1a9a419feb53927eacee21cc00b9a0a7af8860e0e507ef27cd0157fc44
 Filename: pool/main/r/ros-noetic-ws281x/ros-noetic-ws281x_0.0.13-0bookworm_armhf.deb
 
 Package: ros-noetic-xacro
@@ -2818,10 +2837,10 @@ Homepage: http://ros.org/wiki/xacro
 Description: Xacro (XML Macros) Xacro is an XML macro language.
  With xacro, you can construct shorter and more readable XML files by using macros that expand to larger XML expressions.
 Size: 62740
-SHA256: dcd0cb7d9a3ab592033e475c0fe249c2b0994d28a9383a238e0f54a8302d5051
-SHA1: be0f00eb0e5fc7be4e5764112c8ecfd8622a3f83
 MD5sum: 624852d4a9787ea5c659dde3c0290408
 SHA512: 80b9bc233b8aabd250cd6f62942c175e21b31a861a25d5a728ff174f87eadc5156dd38d302589e54d363ec685bfb7284f980420a1c138a4923c245b225c419f5
+SHA256: dcd0cb7d9a3ab592033e475c0fe249c2b0994d28a9383a238e0f54a8302d5051
+SHA1: be0f00eb0e5fc7be4e5764112c8ecfd8622a3f83
 Filename: pool/main/r/ros-noetic-xacro/ros-noetic-xacro_1.14.18-0bookworm_armhf.deb
 
 Package: ros-noetic-xmlrpcpp-dbgsym
@@ -2837,10 +2856,10 @@ Priority: optional
 Description: debug symbols for ros-noetic-xmlrpcpp
 Build-Ids: e33b2c6263057c76a20180c0ca5201fea4fd7928
 Size: 577624
-SHA256: e86d534010f1c4fbdf34878ec40677bcf84f64bf7b34fd1111c5ec607f8e9c8c
 SHA1: 7206fef38de2659d16ccf0359d4dd345dc49078a
 MD5sum: 8f9b283b6b430d3fca9b6d5e06a91384
 SHA512: 9b2e258850fa33769f78e7941023423479f7cfbc7212160363d66aa426ec36318461d15bb4b20d9c357d2ce3bd9894c9bd5791cb1c20e0a27cee79f3edff9e4b
+SHA256: e86d534010f1c4fbdf34878ec40677bcf84f64bf7b34fd1111c5ec607f8e9c8c
 Filename: pool/main/r/ros-noetic-xmlrpcpp-dbgsym/ros-noetic-xmlrpcpp-dbgsym_1.16.0-0bookworm_armhf.deb
 
 Package: ros-noetic-xmlrpcpp
@@ -2855,9 +2874,9 @@ Homepage: http://xmlrpcpp.sourceforge.net
 Description: XmlRpc++ is a C++ implementation of the XML-RPC protocol.
  This version is heavily modified from the package available on SourceForge in order to support roscpp's threading model. As such, we are maintaining our own fork.
 Size: 56128
+MD5sum: 97eba849ae74395eff16eb1b57413300
 SHA512: f50f029043b15dbf3bac3302141fb0f86c60e5a794e37ff3d02761bd7a1d411a59a9c35d027e593844b74bdd3c88f30712d7a017405dc68196e055894597e21d
 SHA256: 162d02f09ecd6d6414919f9661e453c7ca07d5de81f110a9dd51d745c61b2527
 SHA1: 68a59071e0772611929c1c3db187ef5a417ec5fb
-MD5sum: 97eba849ae74395eff16eb1b57413300
 Filename: pool/main/r/ros-noetic-xmlrpcpp/ros-noetic-xmlrpcpp_1.16.0-0bookworm_armhf.deb
 
