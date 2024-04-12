@@ -10,10 +10,10 @@ Multi-Arch: foreign
 Description: build-dependencies for gst-rtsp-launch
  Dependency package to build the 'gst-rtsp-launch' package
 Size: 2120
+MD5sum: 2d033ebe8946dd1c88682fa745cafefd
 SHA512: 14f66fcf522ab58cbee5cbd7ddbcb44abcd506b0e679ab69b8393db8ae71e627de161cb04393a0543be283b55264b239e9fded78648f2a8d97bf8b754bde7601
 SHA256: 4032ffeef3181ae6519ff074fa1db23dae4e38ce0cbdc6c0530507de710d6e6a
 SHA1: 4faca6c55a76dbdf4ba4341363464be25fb42f71
-MD5sum: 2d033ebe8946dd1c88682fa745cafefd
 Filename: pool/main/g/gst-rtsp-launch-build-deps/gst-rtsp-launch-build-deps_0.0.1_all.deb
 
 Package: libopencv4.2-java
@@ -42,10 +42,10 @@ Description: Java bindings for the computer vision library
  analysis, structural analysis, motion analysis and object tracking, object
  recognition, camera calibration and 3D reconstruction.
 Size: 908356
+SHA1: 4fcb8e6fbdd65ea983962ec3d2491a5acc27cc7c
 MD5sum: 92dc8a9e629b9a335d3f1db9cb21ca4f
 SHA512: 7fc2dae9af483ce0eb7ff4251c8f4000bd065d471f2c489b9e5204c479910bb3f31f406bc763f8f50acf07c477bed5f4f9683b48709b421818ca68bf408dbd77
 SHA256: f6b121ce4169efeb8d91d2092162052ffec0671b07beb1dbc605a4b80a14aa09
-SHA1: 4fcb8e6fbdd65ea983962ec3d2491a5acc27cc7c
 Filename: pool/main/libo/libopencv4.2-java/libopencv4.2-java_4.2.0+dfsg-5_all.deb
 
 Package: opencv-data
@@ -72,10 +72,10 @@ Description: development data for opencv
  analysis, structural analysis, motion analysis and object tracking, object
  recognition, camera calibration and 3D reconstruction.
 Size: 1354864
-SHA512: 72b70c1d5199e6955a055bf68b3123f2c131d8c9113a2883f08fdecfcf32c6571b254bcbba2a9db1ef4cdd8a616cc4ca474dc0fc02f94e2d0a5e3e4b26644468
 SHA256: a9f56dcc7e31cd873e30e52da1e5ff3e5e79490da628499de2a21aefaa906a9c
 SHA1: 9e2a66daf811c2a5d3f0bdc74cc3b590cc544850
 MD5sum: 37b1c286061e9ed48f89f6ff2387435c
+SHA512: 72b70c1d5199e6955a055bf68b3123f2c131d8c9113a2883f08fdecfcf32c6571b254bcbba2a9db1ef4cdd8a616cc4ca474dc0fc02f94e2d0a5e3e4b26644468
 Filename: pool/main/o/opencv-data/opencv-data_4.2.0+dfsg-5_all.deb
 
 Package: opencv-doc
@@ -103,9 +103,9 @@ Description: OpenCV documentation and examples
  analysis, structural analysis, motion analysis and object tracking, object
  recognition, camera calibration and 3D reconstruction.
 Size: 92713356
-MD5sum: 82799c86fcd74fbf3eb71b88f732d831
 SHA512: 81bc4a7b4a6109d0270ab2013d200664be55157559f66c243665e92d02873c422026ab5f507ade13783b56de7c8b65a4fb31f35e3dede9ea50c7091adfd7ce5b
 SHA256: de5954083a18dc53c6139604bef050a0dad934e4982ca0bce052736e533c0ec9
 SHA1: 9d528849c7a3259bde5e9730765157ee398dbcad
+MD5sum: 82799c86fcd74fbf3eb71b88f732d831
 Filename: pool/main/o/opencv-doc/opencv-doc_4.2.0+dfsg-5_all.deb
 
